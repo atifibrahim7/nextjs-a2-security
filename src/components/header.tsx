@@ -24,7 +24,6 @@ const Header = () => {
             height={1500}
             layout="responsive"
           />
-          <img src="/images/block.png" alt="" />
         </div>
       </div>
     </div>
