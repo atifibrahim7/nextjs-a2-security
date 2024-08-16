@@ -44,3 +44,17 @@
   background-color: rgba(var(--callout-rgb), 0.5);
   border-radius: var(--border-radius);
 }
+
+.container {
+
+  display: flex;
+
+}
+.img {
+  width: 60vw; /* Make the image container take full width */
+  height: auto; /* Maintain aspect ratio */
+  max-width: 70vw; /* Optional: Limit the maximum width */
+  box-sizing: border-box;
+  padding-right: 15rem ;
+  
+}
