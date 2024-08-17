@@ -67,12 +67,12 @@ body {
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: var(--desktop-three)  ;
+  background: var(--desktop-two)  ;
 }
 
 a {
   color: inherit;
-  text-decoration: dashed;
+  text-decoration: underline;
 }
 
 @media (prefers-color-scheme: dark) {
