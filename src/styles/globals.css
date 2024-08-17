@@ -14,6 +14,13 @@
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
+  --desktop-one: linear-gradient(90deg, #FFFFFF 0%, #E6E6E6 100%);
+  --desktop-two:  linear-gradient(270deg, #A176FD 0%, #604697 100%);
+  --desktop-three: linear-gradient(270deg, #AFADFF 0%, #7270FF 100%);
+
+
+
+
 
   --primary-glow: conic-gradient(
     from 180deg at 50% 50%,
@@ -46,39 +53,6 @@
   --card-border-rgb: 131, 134, 135;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-
-    --primary-glow: radial-gradient(rgba(1, 65, 255, 0.4), rgba(1, 65, 255, 0));
-    --secondary-glow: linear-gradient(
-      to bottom right,
-      rgba(1, 65, 255, 0),
-      rgba(1, 65, 255, 0),
-      rgba(1, 65, 255, 0.3)
-    );
-
-    --tile-start-rgb: 2, 13, 46;
-    --tile-end-rgb: 2, 5, 19;
-    --tile-border: conic-gradient(
-      #ffffff80,
-      #ffffff40,
-      #ffffff30,
-      #ffffff20,
-      #ffffff10,
-      #ffffff10,
-      #ffffff80
-    );
-
-    --callout-rgb: 20, 20, 20;
-    --callout-border-rgb: 108, 108, 108;
-    --card-rgb: 100, 100, 100;
-    --card-border-rgb: 200, 200, 200;
-  }
-}
-
 * {
   box-sizing: border-box;
   padding: 0;
@@ -93,12 +67,7 @@ body {
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background: var(--desktop-three)  ;
 }
 
 a {
@@ -117,4 +86,8 @@ a {
     src: url('../../public/font/PPNeueMachina-InktrapLight.otf') format('opentype');
     font-weight: normal;
     font-style: normal;
+}
+  body {
+  color: rgb(var(--foreground-rgb));
+
 }

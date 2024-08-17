@@ -1,21 +1,22 @@
-
-.main { 
-    display: flex;
-    flex-direction: column;
-    justify-content: left;
-    align-items: flex-start;
-    background-color: var(--background);
-    font-family: 'NeueMachina' ;
-    font-size: 2rem; 
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: flex-start;
+  background-color: var(--background);
+  font-family: "NeueMachina";
+  font-size: 2.5rem;
   width: 50vw;
-  font-family: 'NeueMachina' ;
-  color: var(--heading-color ) ;
+  font-family: "NeueMachina";
+  color: var(--heading-color);
   opacity: 0.9;
   text-transform: uppercase;
-    letter-spacing: 0.5rem;
+  letter-spacing: 0.5rem;
 }
 
-
+.description span {
+  color: #b67cf0;
+}
 
 .description {
   display: inherit;
@@ -24,10 +25,9 @@
   font-size: 1rem;
   max-width: var(--max-width);
   z-index: 2;
-  font-family:'NeueMachina' ;
+  font-family: "NeueMachina";
   width: 40vw;
   font-size: 1.5rem;
-
 }
 
 .description a {
@@ -41,20 +41,75 @@
   position: relative;
   margin: 0;
   padding: 03rem 01rem 01rem 0rem;
-  background-color: rgba(var(--callout-rgb), 0.5);
   border-radius: var(--border-radius);
 }
 
 .container {
+  padding: 6rem;
 
   display: flex;
+  position: relative;
+}
+.circle {
+  position: absolute;
+  top: 250px; /* Adjust the position as needed */
+  left: 250px; /* Adjust the position as needed */
+  width: 234px; /* Adjust the size as needed */
+  height: 234px; /* Adjust the size as needed */
+  background-color: #c9c9c9;
 
+  opacity: 0.7;
+
+  /* Adjust the color and opacity as needed */
+  border-radius: 50%; /* Make it a circle */
+  z-index: -1; /* Ensure it is behind the header */
+  border: 1px;
+}
+.circle1 {
+  top: 0px; /* Adjust the position as needed */
+  left: 100px; /* Adjust the position as needed */
+}
+
+.circle2 {
+  top: -50px; /* Adjust the position as needed */
+  right: -100px; /* Adjust the position as needed */
+  left: 367px;
+}
+
+.circle3 {
+  bottom: 50px; /* Adjust the position as needed */
+  left: 70px; /* Adjust the position as needed */
+  top: 300px;
+}
+
+.circle4 {
+  bottom: 58px;
+  right: 36px;
+  left: 497px;
+  top: 239px;
 }
 .img {
   width: 60vw; /* Make the image container take full width */
   height: auto; /* Maintain aspect ratio */
   max-width: 70vw; /* Optional: Limit the maximum width */
   box-sizing: border-box;
-  padding-right: 15rem ;
-  
+  padding-right: 10rem;
+  margin-left: -5rem;
+}
+@media (max-width: 768px) {
+  .main {
+    font-size: 1.5rem;
+  }
+  .description {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .main {
+    font-size: 1rem;
+  }
+  .description {
+    font-size: 0.8rem;
+  }
 }

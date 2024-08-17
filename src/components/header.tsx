@@ -5,14 +5,18 @@ const Header = () => {
   return (
     <div>
       <div className={styles.container}>
+        <div className={`${styles.circle} ${styles.circle1}`}></div>
+        <div className={`${styles.circle} ${styles.circle2}`}></div>
+        <div className={`${styles.circle} ${styles.circle3}`}></div>
+        <div className={`${styles.circle} ${styles.circle4}`}></div>
         <div className="wrapper">
           <div className={styles.main}>
             <h1>Blockchain Security Audit Services.</h1>
           </div>
           <div className={styles.description}>
             <p>
-              A2 Security combine high-end security research with a real-world
-              attacker mentality to reduce risk and fortify code.
+              <span>A2 Security</span> combine high-end security research with a
+              real-world attacker mentality to reduce risk and fortify code.
             </p>
           </div>
         </div>

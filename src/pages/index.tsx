@@ -5,7 +5,11 @@ import styles from "@/styles/Home.module.css";
 const inter = Inter({ subsets: ["latin"] });
 import Navbar from "@/components/navbar";
 import Header from "@/components/header";
+import { useState } from "react";
+import LoadingSection from "@/components/LoadingSection";
+import NextComponent from "@/components/NextComponent";
 export default function Home() {
+  const [isLoaded, setIsLoaded] = useState<boolean>(false);
   return (
     <>
       <Head>
@@ -19,6 +23,12 @@ export default function Home() {
       </div>
       <main className={`${styles.main} ${inter.className}`}>
         <Header />
+        {!isLoaded ? (
+          <LoadingSection onVisible={() => setIsLoaded(true)} />
+        ) : (
+          <NextComponent />
+        )}
+
         {/* <div className={styles.description}>
           <p>
             Get started by editing&nbsp;
