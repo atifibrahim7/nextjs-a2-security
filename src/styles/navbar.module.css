@@ -39,6 +39,7 @@
   display: flex;
   text-decoration: 0.5px underline;
   text-underline-offset: 1.5px; 
+  cursor: pointer;
   
 }
 
@@ -49,7 +50,8 @@
   -webkit-background-clip: text;
   color: transparent;
   padding: 15px ;
-  
+  transition: opacity 0.5s ease-in-out;
+
 }
 
 /* ------------------------ */
@@ -62,7 +64,7 @@
   width: 100vw;
   font-family: 'NeueMachina' ;
   justify-content: space-between;
-
+  transition: opacity 0.5s ease-in-out;
 }
 
 
@@ -102,7 +104,7 @@
   background: linear-gradient(270deg, #000000 0%, #666666 100%);
   -webkit-background-clip: text;
   color: transparent;
-  padding: 15px ;
-  
+  cursor: pointer;
 }
+
 

@@ -7,7 +7,8 @@ import Navbar from "@/components/navbar";
 import Header from "@/components/header";
 import { useState, useEffect, useRef } from "react";
 import LoadingSection from "@/components/LoadingSection";
-import NextComponent from "@/components/NextComponent";
+import Cards from "@/components/Cards";
+import Button from "@/components/Button";
 export default function Home() {
   const [isLoaded, setIsLoaded] = useState<boolean>(false);
   const [navbarOption, setNavbarOption] = useState<"state1" | "state2">(
@@ -55,14 +56,14 @@ export default function Home() {
         <div ref={headerRef}>
           <Header />
         </div>
-        {!isLoaded ? (
-          <div ref={section2Ref}>
-            <LoadingSection onVisible={() => setIsLoaded(true)} />
-          </div>
-        ) : (
-          <NextComponent />
-        )}
       </main>
+      {!isLoaded ? (
+        <div ref={section2Ref}>
+          <LoadingSection onVisible={() => setIsLoaded(true)} />
+        </div>
+      ) : (
+        <Cards />
+      )}
     </>
   );
 }

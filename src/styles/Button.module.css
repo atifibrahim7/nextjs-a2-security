@@ -1,0 +1,63 @@
+/* styles/Button.module.css */
+.buttonContainer{
+    display: flex;
+    flex-direction: row;
+
+}
+.button {
+    font-family: 'NeueMachina';
+  padding: 10px 20px;
+  background-color: #ffffff; /* Dark gray background */
+  color: #000000; /* White text */
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+  height: 50px;
+  margin-top: 10px;
+
+
+}
+.arrow{
+  padding: 10px 21px;
+  color: #8987FF;
+  background-color: transparent;
+  border: 2px solid #8987FF;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+  height: 50px;
+  margin-top: 10px;
+  margin-left: 0.15px;
+
+}
+.arrow:hover {
+  background-color: transparent; /* Change to a blue color on hover */
+  border: 1px solid #8987FF;
+  color: #8987FF;
+}
+.button:hover {
+  background-color: transparent; /* Change to a blue color on hover */
+  border: 1px solid #8987FF;
+  color: #8987FF;
+}
+
+.button:disabled {
+  background-color: #9ca3af; /* Gray background when disabled */
+  cursor: not-allowed;
+}
+
+@media (max-width: 768px) {
+  .button {
+    font-size: 0.8rem;
+    padding: 10px 15px;
+    height: 40px;
+  }
+  .arrow{
+    font-size: 0.8rem;
+    padding: 10px 15px;
+    height: 40px;
+  }
+}

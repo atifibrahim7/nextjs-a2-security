@@ -8,6 +8,7 @@
   width: vw;
   min-height: 100vh;
   font-family: 'NeueMachina' ;
+  padding: 6rem;
   }
   
 .description {
@@ -45,8 +46,10 @@
 .grid {
   display: grid;
   grid-template-columns: repeat(4, minmax(25%, auto));
+  gap:1rem;
   max-width: 100%;
   width: var(--max-width);
+  padding: 2rem;
 }
 
 .card {
@@ -125,7 +128,7 @@
 
 @media (prefers-reduced-motion) {
   .card:hover span {
-    transform: none;
+    /* transform: none; */
   }
 }
 
@@ -213,15 +216,7 @@
   }
 }
 
-@media (prefers-color-scheme: dark) {
-  .vercelLogo {
-    filter: invert(1);
-  }
 
-  .logo {
-    filter: invert(1) drop-shadow(0 0 0.3rem #ffffff70);
-  }
-}
 
 @keyframes rotate {
   from {
@@ -234,3 +229,4 @@
 .navbar-transition {
   transition: all 1s ease-in-out;
 }
+
