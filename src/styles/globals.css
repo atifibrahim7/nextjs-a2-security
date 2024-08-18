@@ -1,5 +1,6 @@
 :root {
-  --heading-color: #414141;
+  --heading-color: rgba(255, 255, 255, 0.859);
+
 
 
   font-family: 'NeueMachina';
@@ -14,9 +15,7 @@
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
-  --desktop-one: linear-gradient(90deg, #FFFFFF 0%, #E6E6E6 100%);
-  --desktop-two:  linear-gradient(270deg, #A176FD 0%, #604697 100%);
-  --desktop-three: linear-gradient(270deg, #AFADFF 0%, #7270FF 100%);
+  --desktop-two:  linear-gradient(0deg, #171717, #171717);
 
 
 

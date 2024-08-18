@@ -56,14 +56,8 @@ export default function Home() {
         <div ref={headerRef}>
           <Header />
         </div>
+      <Cards />
       </main>
-      {!isLoaded ? (
-        <div ref={section2Ref}>
-          <LoadingSection onVisible={() => setIsLoaded(true)} />
-        </div>
-      ) : (
-        <Cards />
-      )}
     </>
   );
 }

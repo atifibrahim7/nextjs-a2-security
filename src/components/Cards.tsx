@@ -49,26 +49,28 @@ const Cards = () => {
             <h1>At the forefront of the blockchain security</h1>
           )}
           {isTransitioning && (
-            <div>
-              <h1>At the forefront of the</h1>
-              <span>Blockchain security</span>
-              <p>
-                Our mission is to support your success by providing strong
-                security for your blockchain project, allowing it to thrive in a
-                safe and dependable environment while we handle the security
-                details.
-              </p>
-            </div>
+            <>
+              <div>
+                <h1>At the forefront of the</h1>
+                <span>Blockchain security</span>
+                <p>
+                  Secured Over
+                  <em>$1 Billion </em>
+                  in Assets
+                </p>
+              </div>
+              <div>
+                <div className={styles.line}></div>
+                <p>Trusted by</p>
+              </div>
+            </>
           )}
         </div>
         <div className={styles.cardbl}>
-          <h2>
-            Secured Over <span>$1 Billion </span>
-            in Assets
-          </h2>
           <div className={styles.glass}></div>
+          <h2>See how we've safeguarded top blockchain projects</h2>
           <p>Explore Our Audit Reports on Github</p>
-          <Button className={styles.button}>Our Work</Button>
+          <Button isTransparent>Our Work</Button>
         </div>
         <div className={styles.cardbmt}>
           <h2>200+ Clients</h2>

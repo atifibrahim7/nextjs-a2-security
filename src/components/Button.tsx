@@ -7,7 +7,7 @@ interface ButtonProps {
   onClick?: () => void;
   type?: "button" | "submit" | "reset";
   disabled?: boolean;
-  className?: string;
+  isTransparent?: boolean;
 }
 
 const Button: React.FC<ButtonProps> = ({
@@ -15,14 +15,14 @@ const Button: React.FC<ButtonProps> = ({
   onClick,
   type = "button",
   disabled = false,
-  className,
+  isTransparent = false,
 }) => {
   return (
     <>
       <div className={styles.buttonContainer}>
         <div>
           <button
-            className={`${styles.button} ${className}`}
+            className={isTransparent ? styles.button2 : styles.button}
             onClick={onClick}
             type={type}
             disabled={disabled}
@@ -32,7 +32,7 @@ const Button: React.FC<ButtonProps> = ({
         </div>
         <div>
           <button
-            className={styles.arrow}
+            className={isTransparent ? styles.button2 : styles.button}
             onClick={onClick}
             type={type}
             disabled={disabled}

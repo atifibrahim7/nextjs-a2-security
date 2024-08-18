@@ -1,9 +1,7 @@
 
 .container{
     width: 100%;
-    background: rgba(23, 23, 23, 1);
-    padding: 30px;
-    border-radius: 25px;
+  padding-top: 40px;    
 
 }
 .container h1{
@@ -85,6 +83,9 @@ margin: 20px;
     grid-row: 4 / 8;
     grid-column: 1 / 2;
     border: 1px solid  #AFADFF;
+    /* contain every thing inside */
+    display: flex;
+    flex-direction: column;
 
   
 
@@ -93,11 +94,7 @@ margin: 20px;
     color: #AFADFF;
 
 }
-.cardbl .button{
-  background: linear-gradient(34.26deg, #7270FF 9.75%, #AFADFF 93.66%);
-  color: white;
 
-}
 .cardbl p{
   margin-top: 50px;
   font-size: small;
@@ -333,14 +330,46 @@ filter: blur(37px);
   grid-column: 3 / 5;
   transition: grid-row 0.3s ease;
 
+
   
 }
+.cardtr em{
+  color: #7270FF;
+  padding-left: 20px;
+  font-style: normal;
+  font-size: 1.5rem;  
+}
 .cardtr span{
+  padding-left: 20px;
+  display: block;
   color: #7270FF;
   font-size: 4rem;
-}
 
+}
+.cardtr p{
+  color: white;
+  padding: 20px;
+  line-height: 1.5;
+  width: 50%;
+  font-size: 1.5rem;
+
+}
+.cardtr h1{
+  padding-top: 20px;
+padding-left: 20px;
+}
 
 .cardtrTransition {
   grid-row: 1 / 8; /* Update the row span to take up the space previously occupied by .cardbr */
+}
+.line{
+  width: 100%;
+  height: 1px;
+
+background:  linear-gradient(34.26deg, #7270ff93 9.75%, #aeadff43 93.66%);
+
+
+  top: 50%;
+  left: 0;
+  z-index: 1;
 }
