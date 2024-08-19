@@ -11,6 +11,7 @@ import Cards from "@/components/Cards";
 import Button from "@/components/Button";
 import Work from "@/components/Work";
 import Review from "@/components/Review";
+import Footer from "@/components/Footer";
 export default function Home() {
   const [isLoaded, setIsLoaded] = useState<boolean>(false);
   const [navbarOption, setNavbarOption] = useState<"state1" | "state2">(
@@ -62,6 +63,7 @@ export default function Home() {
         <Work />
         <Review />
       </main>
+        <Footer />
     </>
   );
 }
