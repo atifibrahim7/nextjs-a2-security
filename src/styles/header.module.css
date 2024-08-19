@@ -1,3 +1,49 @@
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Apply this class for fade-in effect */
+.fadeIn {
+  opacity: 0;
+  animation-fill-mode: forwards;
+}
+
+.slideInLeft {
+  animation: slideInLeft 0.8s ease-out forwards;
+  opacity: 1;
+}
+
+.slideInRight {
+  animation: slideInRight 0.8s ease-out forwards;
+  opacity: 1;
+}
+
+/* Set initial opacity to 0 */
+.main, .description, .img {
+  opacity: 0;
+}
+
+
+
 .main {
   display: flex;
   flex-direction: column;
@@ -14,6 +60,7 @@
   letter-spacing: 0.5rem;
   
 }
+
 
 .description span {
   color: #b67cf0;
