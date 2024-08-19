@@ -1,110 +1,40 @@
-
-.navbar1{
+/* styles/Navbar.module.css */
+.navbar {
+  padding: 4rem 0rem 0rem 6rem;
   display: flex;
-  flex-direction: row; /* Change from column to row */
-  padding: 2rem 6rem;
-  background-color: var(--background);
-  width: 100vw;
-  font-family: 'NeueMachina' ;
-
 }
 
-
-.navbar1 h2 {
-  font-weight: 100;
-  font-size: medium;
-  padding: 15px 15px;
-  background-color: #FFFFFFB2;
-  margin-right: 10px;
-  position: relative;
-  border: 1px solid rgb(0, 0, 0);
-  border-radius: 7px;
-  color: #000000;
-  
-}
-
-
-
-
-.navbar1 div {
-  margin-right: 1rem; /* Add some spacing between items */
-  
-
-}
-.navbarlink1 {
-  background-color:  #FFFFFFB2;
-  border-radius: 7px;
-  border: 1px solid rgb(0, 0, 0);
-  padding: 15px 15px;
+.navContainer {
   display: flex;
-  text-decoration: 0.5px underline;
-  text-underline-offset: 1.5px; 
-  cursor: pointer;
-  
-}
-
-.navbar1 a  {
-  color: inherit; /* Inherit color 
-  from parent */
-  background: linear-gradient(270deg, #000000 0%, #666666 100%);
-  -webkit-background-clip: text;
-  color: transparent;
-  padding: 15px ;
-  transition: opacity 0.5s ease-in-out;
-
-}
-
-/* ------------------------ */
-
-.navbar2{
-  display: flex;
-  flex-direction: row; /* Change from column to row */
-  padding: 2rem 6rem;
-  background-color: var(--background);
-  width: 100vw;
-  font-family: 'NeueMachina' ;
+  align-items: center;
   justify-content: space-between;
-  transition: opacity 0.5s ease-in-out;
+  padding: 20px ;
+  border: 1px solid  rgba(184, 127, 238, 0.395); /* Border with subtle opacity */
+  border-radius: 8px;
+   background: rgba(35, 35, 36, 0.8);
+;
 }
 
-
-.navbar2 h2 {
-  font-weight: 200;
-  font-size: x-large;
-  padding: 15px;
-  margin-right: 10px;
-  position: relative;
-  color: white ;
-
-  
+.logo h2 {
+  color: #ffffff;
+  font-weight: 400;
+  font-size: 17.28px;
+  margin-right: 20px;
 }
 
-
-
-
-.navbar2 div {
-  margin-right: 1rem; /* Add some spacing between items */
-  
-
-}
-.navbarlink2 {
-  background-color:  #FFFFFFB2;
-  border-radius: 7px;
-  border: 1px solid rgb(0, 0, 0);
-  padding: 15px 15px;
+.links {
   display: flex;
-  text-decoration: 0.5px underline;
-  text-underline-offset: 1.5px; 
-  
+  gap: 20px;
 }
 
-.navbar2 a  {
-  color: inherit; /* Inherit color 
-  from parent */
-  background: linear-gradient(270deg, #000000 0%, #666666 100%);
-  -webkit-background-clip: text;
-  color: transparent;
+.links a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: small;
+  transition: color 0.3s ease;
   cursor: pointer;
 }
 
-
+.links a:hover {
+  color: #afadff; /* Hover effect */
+}

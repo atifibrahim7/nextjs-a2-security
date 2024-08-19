@@ -1,8 +1,19 @@
 // components/Footer.tsx
 import React from "react";
 import styles from "@/styles/Footer.module.css";
-
-const Footer = () => {
+type NavbarProps = {
+  refs: {
+    headerRef: React.RefObject<HTMLDivElement>;
+    section2Ref: React.RefObject<HTMLDivElement>;
+    section3Ref: React.RefObject<HTMLDivElement>;
+  };
+};
+const Footer = ({ refs }: NavbarProps) => {
+  const scrollToSection = (ref: React.RefObject<HTMLDivElement>) => {
+    if (ref.current) {
+      ref.current.scrollIntoView({ behavior: "smooth" });
+    }
+  };
   return (
     <footer className={styles.footer}>
       <div className={styles.line}></div>
@@ -13,13 +24,31 @@ const Footer = () => {
         <div className={styles.middleSection}>
           <ul className={styles.links}>
             <li>
-              <a href="#work">Work</a>
+              <a
+                onClick={() => {
+                  scrollToSection(refs.headerRef);
+                }}
+              >
+                Work
+              </a>
             </li>
             <li>
-              <a href="#process">Process</a>
+              <a
+                onClick={() => {
+                  scrollToSection(refs.section2Ref);
+                }}
+              >
+                Process
+              </a>
             </li>
             <li>
-              <a href="#testimonials">Testimonials</a>
+              <a
+                onClick={() => {
+                  scrollToSection(refs.section3Ref);
+                }}
+              >
+                Testimonials
+              </a>
             </li>
           </ul>
         </div>

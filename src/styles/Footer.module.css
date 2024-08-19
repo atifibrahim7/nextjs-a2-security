@@ -45,4 +45,5 @@ background:  rgba(112, 112, 112, 1);
 .links a:hover,
 .socialLinks a:hover {
   text-decoration: underline;
+  cursor: pointer;
 }

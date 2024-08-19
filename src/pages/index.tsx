@@ -50,20 +50,21 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div>
-        <Navbar
-          option={navbarOption}
-          refs={{ headerRef, section2Ref, section3Ref }}
-        />
+        <Navbar refs={{ headerRef, section2Ref, section3Ref }} />
       </div>
       <main className={`${styles.main} ${inter.className}`}>
+        <Header />
         <div ref={headerRef}>
-          <Header />
+          <Cards />
         </div>
-        <Cards />
-        <Work />
-        <Review />
+        <div ref={section2Ref}>
+          <Work />
+        </div>
+        <div ref={section3Ref}>
+          <Review />
+        </div>
       </main>
-        <Footer />
+      <Footer refs={{ headerRef, section2Ref, section3Ref }} />
     </>
   );
 }

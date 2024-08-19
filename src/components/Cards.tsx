@@ -52,7 +52,7 @@ const Cards = () => {
             <>
               <div>
                 <h1>At the forefront of the</h1>
-                <span>Blockchain security</span>
+                <span>Blockchain security.</span>
                 <p>
                   Secured Over
                   <em>$1 Billion </em>
@@ -62,6 +62,13 @@ const Cards = () => {
               <div>
                 <div className={styles.line}></div>
                 <p>Trusted by</p>
+                <Image
+                  src={"images/partners.svg"}
+                  alt="Partner"
+                  width={100}
+                  height={100}
+                  className={styles.partner}
+                />
               </div>
             </>
           )}
