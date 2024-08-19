@@ -18,18 +18,18 @@ const Work = () => {
           <div className={styles.line}></div>
           <div>
             <h3>What we do</h3>
-            <span>
+            <p>
               We start by discussing your project’s unique requirements and
               goals. This helps us understand the specific challenges and
               security needs of your blockchain system.
-            </span>
+            </p>
           </div>
           <div>
             <h3>What You Get</h3>
-            <span>
+            <p>
               Effective solutions that enhance the security of your blockchain
               project, reducing risk and increasing confidence.
-            </span>
+            </p>
           </div>
         </div>
         <div className={styles.tr}>
@@ -39,18 +39,18 @@ const Work = () => {
           <div className={styles.line}></div>
           <div>
             <h3>What we do</h3>
-            <span>
+            <p>
               We start by discussing your project’s unique requirements and
               goals. This helps us understand the specific challenges and
               security needs of your blockchain system.
-            </span>
+            </p>
           </div>
           <div>
             <h3>What You Get</h3>
-            <span>
+            <p>
               Effective solutions that enhance the security of your blockchain
               project, reducing risk and increasing confidence.
-            </span>
+            </p>
           </div>
         </div>
         <div className={styles.bl}>
@@ -60,18 +60,18 @@ const Work = () => {
           <div className={styles.line}></div>
           <div>
             <h3>What we do</h3>
-            <span>
+            <p>
               We start by discussing your project’s unique requirements and
               goals. This helps us understand the specific challenges and
               security needs of your blockchain system.
-            </span>
+            </p>
           </div>
           <div>
             <h3>What You Get</h3>
-            <span>
+            <p>
               Effective solutions that enhance the security of your blockchain
               project, reducing risk and increasing confidence.
-            </span>
+            </p>
           </div>
         </div>
         <div className={styles.br}>
@@ -81,18 +81,18 @@ const Work = () => {
           <div className={styles.line}></div>
           <div>
             <h3>What we do</h3>
-            <span>
+            <p>
               We start by discussing your project’s unique requirements and
               goals. This helps us understand the specific challenges and
               security needs of your blockchain system.
-            </span>
+            </p>
           </div>
           <div>
             <h3>What You Get</h3>
-            <span>
+            <p>
               Effective solutions that enhance the security of your blockchain
               project, reducing risk and increasing confidence.
-            </span>
+            </p>
           </div>
         </div>
       </div>
