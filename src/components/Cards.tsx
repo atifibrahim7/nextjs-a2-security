@@ -68,7 +68,7 @@ const Cards = () => {
         </div>
         <div className={styles.cardbl}>
           <div className={styles.glass}></div>
-          <h2>See how we've safeguarded top blockchain projects</h2>
+          <h2>See how we have safeguarded top blockchain projects</h2>
           <p>Explore Our Audit Reports on Github</p>
           <Button isTransparent>Our Work</Button>
         </div>
