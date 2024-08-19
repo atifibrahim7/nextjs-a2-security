@@ -12,6 +12,7 @@ import Button from "@/components/Button";
 import Work from "@/components/Work";
 import Review from "@/components/Review";
 import Footer from "@/components/Footer";
+import Ready from "@/components/Ready";
 export default function Home() {
   const [isLoaded, setIsLoaded] = useState<boolean>(false);
   const [navbarOption, setNavbarOption] = useState<"state1" | "state2">(
@@ -63,6 +64,7 @@ export default function Home() {
         <div ref={section3Ref}>
           <Review />
         </div>
+        <Ready />
       </main>
       <Footer refs={{ headerRef, section2Ref, section3Ref }} />
     </>

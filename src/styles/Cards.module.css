@@ -247,6 +247,7 @@ filter: blur(37px);
 
 @media (prefers-reduced-motion) {
   .card:hover span {
+    transform: none;
   }
 } 
 

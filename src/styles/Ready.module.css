@@ -1,0 +1,16 @@
+.container{
+    width: 100%;
+    padding-top: 6rem;
+}
+.container h1 {
+    width: 60%;
+    justify-content: left;
+  font-size: 70px;
+font-weight: 400;
+    background: linear-gradient(270deg, #C7C7C7 0%, #FFFFFF 100%);
+   background-clip: border-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    padding-bottom: 40px;
+}
