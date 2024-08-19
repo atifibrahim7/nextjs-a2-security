@@ -12,6 +12,7 @@
   text-transform: uppercase;
 
   letter-spacing: 0.5rem;
+  
 }
 
 .description span {
@@ -94,6 +95,7 @@
 
 }
 .img {
+
   position: relative;
   width: 100%; /* Make the image take the full width of its container */
   height: 100%; /* Make the image take the full height of its container */

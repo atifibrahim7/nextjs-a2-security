@@ -1,0 +1,32 @@
+.wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 50px;
+    height: 50%;
+    width: 100%;
+          background-image: url('../../public/images/ellipse17.svg');
+  background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.head{
+font-size: 70px;
+font-weight: 400;
+line-height: 71.4px;
+letter-spacing: -0.02em;
+text-align: center;
+width: 60%;
+    padding: 6rem;
+       background:  linear-gradient(270deg, #C7C7C7 0%, #FFFFFF 100%);
+
+    background-clip: border-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+
+
+
+}
+
