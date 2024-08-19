@@ -6,6 +6,7 @@
 }
 .container h1{
     background: linear-gradient(270deg, #999999 0%, #FFFFFF 100%);
+    
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     margin-bottom: 20px;

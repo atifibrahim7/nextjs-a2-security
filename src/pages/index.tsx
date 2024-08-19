@@ -9,6 +9,7 @@ import { useState, useEffect, useRef } from "react";
 import LoadingSection from "@/components/LoadingSection";
 import Cards from "@/components/Cards";
 import Button from "@/components/Button";
+import Work from "@/components/Work";
 export default function Home() {
   const [isLoaded, setIsLoaded] = useState<boolean>(false);
   const [navbarOption, setNavbarOption] = useState<"state1" | "state2">(
@@ -56,7 +57,8 @@ export default function Home() {
         <div ref={headerRef}>
           <Header />
         </div>
-      <Cards />
+        <Cards />
+        <Work />
       </main>
     </>
   );
