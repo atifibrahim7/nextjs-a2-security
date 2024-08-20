@@ -1,4 +1,7 @@
-
+.mainbg{
+  background-image: url('../../public/images/ellipse17.svg');
+  background-position: right;
+}
 
 .main {
   display: flex;
@@ -9,8 +12,7 @@
   min-height: 100vh;
   font-family: 'NeueMachina' ;
   padding: 6rem 2rem 6rem 6rem;
-  background-image: url('../../public/images/ellipse17.svg');
-  background-position: right;
+ 
     
   
   }

@@ -32,7 +32,7 @@ export default function Home() {
       setNavbarOption("state2");
 
       // Re-enable scrolling after 1 second
-      setTimeout(() => {}, 1000);
+      setTimeout(() => { }, 1000);
     };
 
     window.addEventListener("scroll", handleScroll);
@@ -50,13 +50,13 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
+      <div className={styles.mainbg}>
+        <div>
+          <Navbar refs={{ headerRef, section2Ref, section3Ref }} />
+        </div>
 
-      <div>
-        <Navbar refs={{ headerRef, section2Ref, section3Ref }} />
-      </div>
-
-      <main className={`${styles.main} ${inter.className}`}>
-        {/* <div className={styles.largecircle}>
+        <main className={`${styles.main} ${inter.className}`}>
+          {/* <div className={styles.largecircle}>
           <Image
             src={"images/largecircle.svg"}
             width={800}
@@ -64,19 +64,20 @@ export default function Home() {
             alt=""
           />
         </div> */}
-        <Header />
-        <div ref={headerRef}>
-          <Cards />
-        </div>
-        <div ref={section2Ref}>
-          <Work />
-        </div>
-        <div ref={section3Ref}>
-          <Review />
-        </div>
-        <Ready />
-      </main>
-      <Footer refs={{ headerRef, section2Ref, section3Ref }} />
+          <Header />
+          <div ref={headerRef}>
+            <Cards />
+          </div>
+          <div ref={section2Ref}>
+            <Work />
+          </div>
+          <div ref={section3Ref}>
+            <Review />
+          </div>
+          <Ready />
+        </main>
+        <Footer refs={{ headerRef, section2Ref, section3Ref }} />
+      </div>
     </>
   );
 }

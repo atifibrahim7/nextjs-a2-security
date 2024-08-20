@@ -265,7 +265,10 @@ filter: blur(37px);
   grid-row: 1 / 8; 
   grid-column: 3 / 5;
   transition: grid-row 0.3s ease;
-
+  background-image: url('../../public/images/group.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right;
 
   
 }

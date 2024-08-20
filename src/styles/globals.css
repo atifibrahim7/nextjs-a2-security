@@ -65,6 +65,7 @@ body {
 }
 
 body {
+  font-family: 'NeueMachina';
   color: rgb(var(--foreground-rgb));
   background: var(--desktop-two)  ;
 }
