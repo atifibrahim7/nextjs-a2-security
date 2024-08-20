@@ -82,7 +82,7 @@ const Review = () => {
             <div className={styles.colorstart}>
               <span>&quot;</span>
             </div>
-            <p>
+            <p className={styles.para}>
               Their audit process was thorough and efficient. We were impressed
               by their attention to detail and how quickly they identified and
               addressed potential vulnerabilities. Thanks to their work, we feel

@@ -40,8 +40,8 @@ gap:    20px;
 display: flex;
 background: rgba(35, 35, 36, 1);
 border: 1px solid #7270ff92;
-height: 400px;
-width: 400px;
+height: 300px;
+width: 300px;
 border-radius: 20px;
 align-items: center;
 flex-direction: column;
@@ -60,13 +60,17 @@ padding-top: 30px;
     
 }
 .card p {
+    font-size: 0.8rem;
        background:  linear-gradient(270deg, #C7C7C7 0%, #FFFFFF 100%);
     background-clip: border-box;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    padding-left: 30px;   
+    padding-left: 2rem;   
     padding-right: 15px;  
-    line-height: 22.4px;
+    line-height: 15px;
+    position: relative;
+    top:-20%; 
+
     justify-content: center;
 }
 .card h3 {
@@ -76,16 +80,18 @@ padding-top: 30px;
 
 .colorend{
     
-    
+    position: relative;
+    top:-20%; 
 text-align: right;
 padding-right: 100px;
+left : 22%;
 }
 
 .colorstart{
-    
-    
+    position: relative;
+    top:0%; 
+font-size: smaller;
 text-align: left;
-padding-left: 50px;
 }
 
 
@@ -102,7 +108,13 @@ padding-left: 50px;
 }
     }
 
-    @media (min-width: 0px) and  (max-width: 600px) {
+
+ 
+
+
+/* Adjustments for smaller screens */
+
+@media (min-width: 0px) and  (max-width: 700px) {
     .head{
         font-size: 1rem;
         font-weight: 200;
@@ -113,16 +125,21 @@ padding-left: 50px;
         padding: 3rem;
   
 }
+.card h3 {
+    padding: 10px;
+    font-size: 1rem;
+}
+.card span{
+    font-size: 30px;
+}
+.card p {
+    padding-left: 1rem;   
+    padding-right: 5px;  
+    line-height: 20px;
+}
+
     }
-    @media (max-width: 700px) {
-        .head {
-            font-size: 1.5rem;
-            font-weight: 200;
-            line-height: 20.4px;
-            letter-spacing: -0.02em;
-            text-align: center;
-            width: 60%;
-            padding: 2rem;
-        }
-      }
+
+
+
 
