@@ -22,6 +22,7 @@ const Navbar = ({ refs }: NavbarProps) => {
           <div className={styles.logo}>
             <h2>A2 SECURITY</h2>
           </div>
+          <div className={styles.line}></div>
           <div className={styles.links}>
             <div>
               <a
