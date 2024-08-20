@@ -121,31 +121,44 @@
 
 
 }
-  .largecircle{
-
   
-  }
 .img{
   position: relative;
-  height:200% ;
-  width: 100vw;
+  height:600px ;
+  width: 600px;
   top: 30%;
   z-index: 10;  
 }
-@media (max-width: 768px) {
+@media (min-width: 701px) and (max-width: 1120px) {
   .main {
     font-size: 1.5rem;
   }
   .description {
     font-size: 1rem;
   }
+  .img{
+    height: 400px;
+    width: 400px;
+    top:30% ;
+    left:-30%;
+
+  }
+  
 }
 
-@media (max-width: 576px) {
+@media (max-width: 700px) {
   .main {
     font-size: 1rem;
   }
+ 
   .description {
     font-size: 0.8rem;
   }
+  .img{
+    height: 300px;
+    width: 300px;
+    top:20% ;
+    right: 20%;
+  }
+ 
 }

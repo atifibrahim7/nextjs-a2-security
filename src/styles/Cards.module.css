@@ -351,6 +351,10 @@ background:  linear-gradient(34.26deg, #7270ff93 9.75%, #aeadff43 93.66%);
     grid-column: 1 / 3;
     grid-template-columns: 0.5fr;
   }
+  .cardtl p , .card span  {
+    width: 50%;
+
+  } 
 
   .cardtr {
     grid-row: 3 / 5; /* Adjusted grid area */
@@ -384,6 +388,14 @@ background:  linear-gradient(34.26deg, #7270ff93 9.75%, #aeadff43 93.66%);
   .container h1 {
     font-size: 3rem; /* Adjusted font size for smaller screens */
     margin-top: 5rem;
+  }
+
+  .container span {
+      font-size: 2rem;
+  }
+  .cardtr h1{
+padding: 0;
+margin: 0;
   }
 }
 

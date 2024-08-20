@@ -64,6 +64,7 @@ const Header = () => {
                 alt="block"
                 width={600}
                 height={600}
+                layout="responsive"
               />
             </div>
           </div>

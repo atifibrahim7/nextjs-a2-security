@@ -47,3 +47,50 @@ background:  rgba(112, 112, 112, 1);
   text-decoration: underline;
   cursor: pointer;
 }
+/* Small Desktops (701px - 1120px) */
+@media (min-width: 701px) and (max-width: 1120px) {
+  .footer {
+    padding: 30px;
+  }
+
+  .footerContainer {
+    padding: 30px;
+    max-width: 1000px; /* Reduced max-width */
+  }
+
+  .middleSection .links,
+  .rightSection .socialLinks {
+    gap: 15px; /* Reduced gap */
+  }
+
+  .links a,
+  .socialLinks a {
+    font-size: 14px; /* Slightly reduced font size */
+  }
+}
+
+/* Mobile Devices (max-width: 700px) */
+@media (max-width: 700px) {
+  .footer {
+    padding: 20px;
+  }
+
+  .footerContainer {
+    padding: 20px;
+    max-width: 100%; /* Full width for mobile */
+  }
+
+  .middleSection .links,
+  .rightSection .socialLinks {
+    gap: 10px; /* Further reduced gap */
+  }
+
+  .links a,
+  .socialLinks a {
+    font-size: 12px; /* Smaller font size for mobile */
+  }
+
+  .leftSection h2 {
+    font-size: 16px; /* Reduced font size */
+  }
+}

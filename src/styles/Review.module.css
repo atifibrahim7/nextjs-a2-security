@@ -114,3 +114,15 @@ padding-left: 50px;
   
 }
     }
+    @media (max-width: 700px) {
+        .head {
+            font-size: 1.5rem;
+            font-weight: 200;
+            line-height: 20.4px;
+            letter-spacing: -0.02em;
+            text-align: center;
+            width: 60%;
+            padding: 2rem;
+        }
+      }
+
