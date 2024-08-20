@@ -76,21 +76,21 @@ background:  rgba(112, 112, 112, 1);
   }
 
   .footerContainer {
-    padding: 20px;
+    padding: 10px;
     max-width: 100%; /* Full width for mobile */
   }
 
   .middleSection .links,
   .rightSection .socialLinks {
-    gap: 10px; /* Further reduced gap */
+    gap: 5px; /* Further reduced gap */
   }
 
   .links a,
   .socialLinks a {
-    font-size: 12px; /* Smaller font size for mobile */
+    font-size: 8px; /* Smaller font size for mobile */
   }
 
   .leftSection h2 {
-    font-size: 16px; /* Reduced font size */
+    font-size: 12px; /* Reduced font size */
   }
 }
