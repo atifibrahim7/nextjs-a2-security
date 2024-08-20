@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import styles from "@/styles/Cards.module.css";
 import Button from "./Button";
 import Image from "next/image";
-
+import Slider from "./SlideTrack";
 const Cards = () => {
   const [isTransitioning, setIsTransitioning] = useState(false);
 
@@ -62,13 +62,17 @@ const Cards = () => {
               <div>
                 <div className={styles.line}></div>
                 <p>Trusted by</p>
-                <Image
+                <div className={styles.wrapslider}>
+
+                <Slider />
+                </div>
+                {/* <Image
                   src={"images/partners.svg"}
                   alt="Partner"
                   width={100}
                   height={100}
                   className={styles.partner}
-                />
+                /> */}
               </div>
             </>
           )}

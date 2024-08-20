@@ -12,7 +12,7 @@
     background-position: center;
 }
 .head{
-font-size: 70px;
+font-size: 5rem;
 font-weight: 400;
 line-height: 71.4px;
 letter-spacing: -0.02em;
@@ -87,3 +87,30 @@ padding-right: 100px;
 text-align: left;
 padding-left: 50px;
 }
+
+
+@media (min-width: 701px) and (max-width: 1120px) {
+    .head{
+        font-size: 3rem;
+        font-weight: 400;
+        line-height: 40.4px;
+        letter-spacing: -0.02em;
+        text-align: center;
+        width: 60%;
+        padding: 4rem;
+  
+}
+    }
+
+    @media (min-width: 0px) and  (max-width: 600px) {
+    .head{
+        font-size: 1rem;
+        font-weight: 200;
+        line-height: 20.4px;
+        letter-spacing: -0.02em;
+        text-align: center;
+        width: 60%;
+        padding: 3rem;
+  
+}
+    }

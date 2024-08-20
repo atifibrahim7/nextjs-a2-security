@@ -50,14 +50,20 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div className={styles.largecircle}>
-        <Image src={"images/largecircle.svg"} width={800} height={800} alt="" />
-      </div>
+
       <div>
         <Navbar refs={{ headerRef, section2Ref, section3Ref }} />
       </div>
 
       <main className={`${styles.main} ${inter.className}`}>
+        {/* <div className={styles.largecircle}>
+          <Image
+            src={"images/largecircle.svg"}
+            width={800}
+            height={800}
+            alt=""
+          />
+        </div> */}
         <Header />
         <div ref={headerRef}>
           <Cards />

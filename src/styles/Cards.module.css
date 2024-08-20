@@ -310,6 +310,10 @@ background:  linear-gradient(34.26deg, #7270ff93 9.75%, #aeadff43 93.66%);
   left: 0;
   z-index: 1;
 }
+.wrapslider{
+  align-items: centre ;
+  justify-content: center;
+}
 .partner{
     width: 100%;
 }
