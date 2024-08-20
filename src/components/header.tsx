@@ -56,8 +56,16 @@ const Header = () => {
             </div>
             <Button>Schedule an Audit</Button>
           </div>
-          <div ref={imgRef} className={styles.img}>
-            <Image src="/images/block.svg" alt="block" layout="fill" />
+          <div>
+      
+            <div ref={imgRef} className={styles.img}>
+              <Image
+                src="/images/block.svg"
+                alt="block"
+                width={600}
+                height={600}
+              />
+            </div>
           </div>
         </div>
       </div>

@@ -112,43 +112,25 @@
   z-index: -1; /* Ensure it is behind the header */
   border: 1px;
 }
-.circle1 {
-  top: 0px; /* Adjust the position as needed */
-  left: 100px; /* Adjust the position as needed */
-}
 
-.circle2 {
-  top: -50px; /* Adjust the position as needed */
-  right: -100px; /* Adjust the position as needed */
-  left: 367px;
-}
-
-.circle3 {
-  bottom: 50px; /* Adjust the position as needed */
-  left: 70px; /* Adjust the position as needed */
-  top: 300px;
-}
-
-.circle4 {
-  bottom: 58px;
-  right: 36px;
-  left: 497px;
-  top: 239px;
-}
 .wrapper{
- display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 10px;
+  position: relative;
+  display: flex   ; 
+  flex-direction: row;
+  flex-grow: 1;
+
 
 }
-.img {
+  .largecircle{
 
+  
+  }
+.img{
   position: relative;
-  width: 100%; /* Make the image take the full width of its container */
-  height: 100%; /* Make the image take the full height of its container */
-  object-fit: cover; /* Ensure the image covers the entire container without stretching */
-  top: 220px;
-  right: 20px;
+  height:200% ;
+  width: 100vw;
+  top: 30%;
+  z-index: 10;  
 }
 @media (max-width: 768px) {
   .main {
