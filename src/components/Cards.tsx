@@ -41,41 +41,36 @@ const Cards = () => {
           />
         </div>
         <div
-          className={`${styles.cardtr} ${
-            isTransitioning ? styles.cardtrTransition : ""
-          }`}
+          className={styles.cardtr}
         >
-          {!isTransitioning && (
-            <h1>At the forefront of the blockchain security</h1>
-          )}
-          {isTransitioning && (
-            <>
-              <div>
-                <h1>At the forefront of the</h1>
-                <span>Blockchain security.</span>
-                <p>
-                  Secured Over
-                  <em>$1 Billion </em>
-                  in Assets
-                </p>
-              </div>
-              <div>
-                <div className={styles.line}></div>
-                <p>Trusted by</p>
-                <div className={styles.wrapslider}>
+
+
+          <>
+            <div>
+              <h1>At the forefront of the</h1>
+              <span>Blockchain security.</span>
+              <p>
+                Secured Over
+                <em>$1 Billion </em>
+                in Assets
+              </p>
+            </div>
+            <div>
+              <div className={styles.line}></div>
+              <p>Trusted by</p>
+              <div className={styles.wrapslider}>
 
                 <Slider />
-                </div>
-                {/* <Image
+              </div>
+              {/* <Image
                   src={"images/partners.svg"}
                   alt="Partner"
                   width={100}
                   height={100}
                   className={styles.partner}
                 /> */}
-              </div>
-            </>
-          )}
+            </div>
+          </>
         </div>
         <div className={styles.cardbl}>
           <div className={styles.glass}></div>
@@ -106,9 +101,7 @@ const Cards = () => {
           </div>
         </div>
         <div
-          className={`${styles.cardbr} ${
-            isTransitioning ? styles.cardbrDisappear : ""
-          }`}
+          className={`${styles.cardbr} ${styles.cardbrDisappear}`}
         ></div>
       </div>
     </div>
