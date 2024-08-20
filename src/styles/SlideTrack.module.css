@@ -1,31 +1,90 @@
+/* Base styles */
 @keyframes scroll {
-    0% {
+  0% {
       transform: translateX(0);
-    }
-    100% {
+  }
+  100% {
       transform: translateX(-100%);
-    }
   }
-  
-  .slider {
-    height: 100%;
-    margin: auto;
-    overflow: hidden;
-    position: relative;
-    width: 100%;
-  }
-  
+}
+
+.slider {
+  height: 100%;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.slidetrack {
+  display: flex;
+  width: calc(100% * 7); /* Base width for 7 slides */
+  animation: scroll 30s linear infinite;
+}
+
+.slide {
+  height: 100%;
+  flex: 0 0 auto;
+  width: calc(30% / 7); /* Base width for 7 slides */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Media queries */
+@media (max-width: 1200px) {
   .slidetrack {
-    display: flex;
-    width: calc(100% * 7); /* Make the width dependent on the number of slides */
-    animation: scroll 70s linear infinite;
+      width: calc(100% * 5); /* Adjust width for 5 slides */
   }
   
   .slide {
-    height: 100%;
-    flex: 0 0 auto; /* Ensure that each slide takes up a fixed portion of the track */
-    width: calc(30% / 7); /* Set each slide to take an equal portion of the container */
-    display: flex;
-    align-items: center;
-    justify-content: center;
+      width: calc(30% / 5); /* Adjust width for 5 slides */
   }
+}
+
+@media (max-width: 900px) {
+  .slidetrack {
+      width: calc(100% * 3); /* Adjust width for 3 slides */
+  }
+  
+  .slide {
+      width: calc(30% / 3); /* Adjust width for 3 slides */
+  }
+}
+
+@media (max-width: 600px) {
+  .slidetrack {
+      width: calc(100% * 2); /* Adjust width for 2 slides */
+  }
+  
+  .slide {
+      width: calc(30% / 2); /* Adjust width for 2 slides */
+  }
+}
+
+
+
+
+@media (max-width: 1200px) {
+  .slide {
+      transform: scale(0.8); /* Scale down for medium screens */
+  }
+}
+
+@media (max-width: 900px) {
+  .slide {
+      transform: scale(0.6); /* Scale down further for smaller screens */
+  }
+}
+
+@media (max-width: 600px) {
+  .slide {
+      transform: scale(0.5); /* Further scale down for mobile screens */
+  }
+}
+
+@media (max-width: 400px) {
+  .slide {
+      transform: scale(0.4); /* Maximum scaling for very small screens */
+  }
+}
