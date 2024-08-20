@@ -151,9 +151,10 @@
 /* Mobile */
 @media (max-width: 700px) {
   .content {
-    padding: 4rem;
   }
-
+  .main{
+    padding: 10px ;  /*same in nav */
+  }
   .grid {
     grid-template-columns: 1fr;
     margin-bottom: 120px;
