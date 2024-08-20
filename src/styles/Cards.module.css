@@ -380,7 +380,29 @@ background:  linear-gradient(34.26deg, #7270ff93 9.75%, #aeadff43 93.66%);
   .cardtr h1{
 padding: 0;
 margin: 0;
+padding-left:20px ;
+
   }
 }
 
 
+
+@media (max-width: 450px) {
+  .grid {
+    grid-template-columns: 1fr; /* Stacks all grid items in a single column */
+    grid-template-rows: auto; /* Adjust row height as needed */
+    gap: 0.5rem; /* Adjust gap for smaller screens */
+  }
+
+  .grid > * {
+    padding: 5px; /* Reduce padding inside grid items */
+  }
+
+  .container h1 {
+    font-size: 2rem; /* Further reduce font size */
+  }
+
+  .container h2 {
+    font-size: 1.5rem; /* Reduce font size */
+  }
+}
