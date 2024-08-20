@@ -9,7 +9,8 @@
     -webkit-text-fill-color: transparent;
     font-weight: 400;
     font-size: 100px;
-    padding-bottom: 10px;
+    padding-bottom: 10px; 
+
 }
 .container  .para {
     color: rgba(204, 204, 204, 1);
@@ -143,4 +144,45 @@ padding-bottom: 30px;
 
 .slide-in-right {
   animation: slideInRight 1s forwards;
+}
+
+
+@media (max-width: 450px) {
+  
+  .container h1 {
+      font-size: 60px; /* Adjust font size for smaller screens */
+      padding-bottom: 5px; /* Adjust padding for better fit */
+  }
+  
+  .container .para {
+      font-size: 24px; /* Reduce font size */
+      width: 90%; /* Adjust width to fit smaller screens */
+      padding-bottom: 30px; /* Adjust padding */
+  }
+
+  .container h2 {
+      font-size: 24px; /* Reduce font size */
+      padding: 15px; /* Adjust padding */
+  }
+
+  .container h3 {
+      font-size: 18px; /* Reduce font size */
+      padding: 15px; /* Adjust padding */
+  }
+
+  .grid {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .grid p {
+      font-size: 16px; /* Reduce font size */
+      padding-left: 2rem; /* Adjust padding */
+      width: 100%; /* Adjust width to fit container */
+  }
+
+  .line {
+      width: 100%; /* Full width on smaller screens */
+      transform: none; /* Remove horizontal centering */
+  }
 }
