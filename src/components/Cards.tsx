@@ -31,20 +31,15 @@ const Cards = () => {
             Top 10 in <span>Codehawk’s Global Contest.</span> Industry-leading
             security expertise recognized worldwide.
           </p>
-          <div className={styles.oval}></div>
           <Image
-            src={"/images/cardtlimg.svg"}
+            src={"/images/cardtloval.svg"}
             alt="cardtlimg"
-            width={300}
+            width={100}
             height={100}
             className={styles.img}
           />
         </div>
-        <div
-          className={styles.cardtr}
-        >
-
-
+        <div className={styles.cardtr}>
           <>
             <div>
               <h1>At the forefront of the</h1>
@@ -59,16 +54,8 @@ const Cards = () => {
               <div className={styles.line}></div>
               <p>Trusted by</p>
               <div className={styles.wrapslider}>
-
                 <Slider />
               </div>
-              {/* <Image
-                  src={"images/partners.svg"}
-                  alt="Partner"
-                  width={100}
-                  height={100}
-                  className={styles.partner}
-                /> */}
             </div>
           </>
         </div>
@@ -100,13 +87,10 @@ const Cards = () => {
             </div>
           </div>
         </div>
-        <div
-          className={`${styles.cardbr} ${styles.cardbrDisappear}`}
-        ></div>
+        <div className={`${styles.cardbr} ${styles.cardbrDisappear}`}></div>
       </div>
     </div>
   );
 };
 
 export default Cards;
-
