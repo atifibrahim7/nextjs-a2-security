@@ -46,7 +46,7 @@ const Cards = () => {
               <span>Blockchain security.</span>
               <p>
                 Secured Over
-                <em>$1 Billion </em>
+                <em> $1 Billion </em>
                 in Assets
               </p>
             </div>
