@@ -49,10 +49,8 @@
   flex-direction: column;
   justify-content: left;
   background-color: var(--background);
-  font-family: "NeueMachina";
   font-size: 2.5rem;
   width: 50vw;
-  font-family: "NeueMachina";
   color: var(--heading-color);
   opacity: 0.9;
   text-transform: uppercase;
@@ -73,7 +71,6 @@
   font-size: 1rem;
   max-width: var(--max-width);
   z-index: 2;
-  font-family: "NeueMachina";
   width: 40vw;
   font-size: 1.5rem;
 }
