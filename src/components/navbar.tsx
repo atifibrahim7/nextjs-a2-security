@@ -18,39 +18,41 @@ const Navbar = ({ refs }: NavbarProps) => {
   return (
     <div>
       <nav className={styles.navbar}>
-        <div className={styles.navContainer}>
-          <div className={styles.logo}>
-            <h2>A2 SECURITY</h2>
-          </div>
-          <div className={styles.line}></div>
-          <div className={styles.links}>
-            <div>
-              <a
-                onClick={() => {
-                  scrollToSection(refs.headerRef);
-                }}
-              >
-                Work
-              </a>
+        <div className={styles.roundedcornersborder}>
+          <div className={styles.navContainer}>
+            <div className={styles.logo}>
+              <h2>A2 SECURITY</h2>
             </div>
+            <div className={styles.line}></div>
+            <div className={styles.links}>
+              <div>
+                <a
+                  onClick={() => {
+                    scrollToSection(refs.headerRef);
+                  }}
+                >
+                  Work
+                </a>
+              </div>
 
-            <div>
-              <a
-                onClick={() => {
-                  scrollToSection(refs.section2Ref);
-                }}
-              >
-                How we work
-              </a>
-            </div>
-            <div>
-              <a
-                onClick={() => {
-                  scrollToSection(refs.section3Ref);
-                }}
-              >
-                Testimonials
-              </a>
+              <div>
+                <a
+                  onClick={() => {
+                    scrollToSection(refs.section2Ref);
+                  }}
+                >
+                  How we work
+                </a>
+              </div>
+              <div>
+                <a
+                  onClick={() => {
+                    scrollToSection(refs.section3Ref);
+                  }}
+                >
+                  Testimonials
+                </a>
+              </div>
             </div>
           </div>
         </div>

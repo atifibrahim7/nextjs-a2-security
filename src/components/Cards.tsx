@@ -59,12 +59,12 @@ const Cards = () => {
             </div>
           </>
         </div>
-
         <div className={styles.cardbl}>
           <h2>See how we have safeguarded top blockchain projects</h2>
           <p>Explore Our Audit Reports on Github</p>
           <Button isTransparent>Explore Work</Button>
         </div>
+        
         <div className={styles.cardbmt}>
           <h2>200+ Clients</h2>
           <p>secured worldwide</p>

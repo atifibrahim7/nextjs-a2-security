@@ -1,3 +1,15 @@
+
+.roundedcornersborder  
+{
+  
+  border: double 2px transparent;
+  border-radius: 20px;
+  background-image: linear-gradient(rgb(113, 104, 124), rgb(63, 59, 68)), 
+                    linear-gradient(to right, rgb(110, 99, 120), rgb(79, 80, 88));
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  
+}
 .wrapper{
     display: flex;
     justify-content: center;
@@ -39,7 +51,6 @@ gap:    20px;
 .card{
 display: flex;
 background: rgba(35, 35, 36, 1);
-border: 1px solid #7270ff92;
 height: 426px;
 width: 417px;
 border-radius: 20px;
