@@ -160,7 +160,7 @@ grid-column:2 / 3 ;
 
 }
 
-.cardbmb .wrapper{
+.cardbmb {
   display: flex;
   flex-direction: row;
   background-image: url('../../public/images/exchange.svg');
@@ -169,28 +169,28 @@ grid-column:2 / 3 ;
 /* background on right */
   background-position: right;
   background-repeat: no-repeat;
-  position: relative;
 
   
 }
-.cardbmb .wrapper h2{
+.cardbmb  h2{
  background: linear-gradient(80.69deg, #AFADFF 17.51%, #7270FF 40.8%);
 
     background-clip: border-box;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-  margin-top: 4rem;
+  margin-top: 5rem;
+  width: 50%;
 
 }
-.cardbmb .wrapper p{
+.cardbmb  p{
   font-size: small;
-  margin-top: 2rem;
+  margin-top: 1.5rem;
    background: linear-gradient(270deg, #C2C2C2 0%, #FFFFFF 100%);
   background-clip: border-box;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.cardbmb .wrapper .image{
+.cardbmb  .image{
   width: 50%;
   height: 100%;
 }
@@ -259,23 +259,7 @@ filter: blur(37px);
   position: relative;
 }
 
-/* Enable hover only on non-touch devices */
- @media (hover: hover) and (pointer: fine) {
-  .card:hover {
-    background: rgba(var(--card-rgb), 0.1);
-    border: 1px solid rgba(var(--card-border-rgb), 0.15);
-  }
 
-  .card:hover span {
-    transform: translateX(4px);
-  }
-}
-
-@media (prefers-reduced-motion) {
-  .card:hover span {
-    transform: none;
-  }
-} 
 
 
 
@@ -295,7 +279,8 @@ filter: blur(37px);
   background-image: url('../../public/images/group.svg');
   background-size: contain;
   background-repeat: no-repeat;
-  background-position: right;
+  background-position: center;
+  padding-bottom: 0;
 
   
 }
@@ -350,29 +335,9 @@ background:  linear-gradient(34.26deg, #7270ff93 9.75%, #aeadff43 93.66%);
 
 
 
-@media (max-width: 450px) {
-  .grid {
-    grid-template-columns: 1fr; /* Stacks all grid items in a single column */
-    grid-template-rows: auto; /* Adjust row height as needed */
-    gap: 0.5rem; /* Adjust gap for smaller screens */
-  }
-
-  .grid > * {
-    padding: 5px; /* Reduce padding inside grid items */
-  }
-
-  .container h1 {
-    font-size: 2rem; /* Further reduce font size */
-  }
-
-  .container h2 {
-    font-size: 1.5rem; /* Reduce font size */
-  }
-}
-
-
+/*  TBD */
 /* Tablet and Smaller Desktop */
- @media (min-width: 300px) and (max-width: 1120px) 
+ @media (min-width: 450px) and (max-width: 980px) 
  {
 /* Tablet and Smaller Desktop */
   .grid {
@@ -394,11 +359,17 @@ background:  linear-gradient(34.26deg, #7270ff93 9.75%, #aeadff43 93.66%);
   .cardtr {
     grid-row: 3 / 5; /* Adjusted grid area */
     grid-column: 1 / 3;
+  background-size: cover;
+
   }
 
   .cardbl {
     grid-row: 5 / 7; /* Adjusted grid area */
     grid-column: 1 / 2;
+
+  }
+  .cardbl h2 {
+    font-size: 1rem; /* Adjusted font size for smaller screens */
   }
 
   .cardbmt {
@@ -433,6 +404,7 @@ padding: 0;
 margin: 0;
 padding-left:20px ;
 
+
   }
 
   .cardtl p {
@@ -441,5 +413,101 @@ padding-left:20px ;
     font-size: 1.5rem;
     width: 100%;
   }
+  .cardbmb  h2 {
+        margin-top: 2rem;
+    width: 100%;
+  }
+
+    .cardtr em {
+    padding-left: 10px;
+    font-size: 1.25rem; /* Adjusted for smaller screens */
+  }
+
+  .cardtr span {
+    padding-left: 10px;
+    font-size: 3rem; /* Adjusted for smaller screens */
+  }
+
+  .cardtr p {
+    padding: 10px;
+    width: 80%; /* Increase width for better fit */
+    font-size: 1.25rem; /* Adjusted for smaller screens */
+  }
+
+  .cardtr h1 {
+    padding-top: 10px;
+    padding-left: 10px;
+    font-size: 1.75rem; /* Adjusted for smaller screens */
+  }
+  .cardtr span{
+    /* increase row size of grid */
+    
+    font-size: 1.2rem;
+  }
 }
 
+
+@media (max-width: 600px) {
+   .grid {
+    grid-template-rows: repeat(11, minmax(10%, auto));
+    gap: 0.5rem; 
+  }
+
+  .grid > * {
+    padding: 5px; 
+  }
+.cardtl{
+  grid-row: 1 / 3;
+  grid-column: 1 / 5;
+}
+ .cardtl h1 , .cardtl p , .cardtl span {
+    font-size: 1rem;
+  } 
+  
+  .cardbl{
+    grid-row: 3 / 6;
+  grid-column: 1 / 5;
+}
+.cardbmt{
+ grid-row: 6 / 8;
+ grid-column: 1 / 5;
+}
+.cardbmb
+{
+grid-row: 8 / 10;
+grid-column: 1 / 5;
+}
+.cardbmb h2{
+  font-size: 1rem;
+  margin: 0;
+  padding-top: 20px;
+}
+.cardtr {
+grid-row: 10 / 12;
+grid-column: 1 / 5;
+}
+
+.cardtr h1{
+  font-size: 1.5rem;
+  margin: 0;
+  padding: 0;
+}
+.cardtr em{
+  font-size: 1rem;
+  margin: 0;
+  padding: 0;
+}
+.cardtr span{
+  font-size: 1rem;
+  margin: 0;
+  padding: 0;
+}
+.cardtr p {
+  font-size: 1rem;
+  margin: 0;
+  padding: 0;
+}
+ .cardbl h2 {
+    font-size: 1rem; /* Adjusted font size for smaller screens */
+  }
+}

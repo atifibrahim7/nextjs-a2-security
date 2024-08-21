@@ -186,3 +186,8 @@ padding-bottom: 30px;
       transform: none; /* Remove horizontal centering */
   }
 }
+@media (max-width: 600px) {
+  .container {
+      padding-top: 200px; /* Adjust padding for better fit */
+  }
+}

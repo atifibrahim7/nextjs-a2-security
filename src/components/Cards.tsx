@@ -60,7 +60,6 @@ const Cards = () => {
           </>
         </div>
         <div className={styles.cardbl}>
-          <div className={styles.glass}></div>
           <h2>See how we have safeguarded top blockchain projects</h2>
           <p>Explore Our Audit Reports on Github</p>
           <Button isTransparent>Explore Work</Button>
@@ -70,21 +69,9 @@ const Cards = () => {
           <p>secured worldwide</p>
         </div>
         <div className={styles.cardbmb}>
-          <div className={styles.wrapper}>
-            <div>
-              <h2>300+ Audits</h2>
-              <p>completed successfully</p>
-            </div>
-
-            <div className={styles.image}>
-              <Image
-                src={"/images/circle.svg"}
-                alt="cardtlimg"
-                width={200}
-                height={200}
-                className={styles.compimg}
-              />{" "}
-            </div>
+          <div>
+            <h2>300+ Audits</h2>
+            <p>completed successfully</p>
           </div>
         </div>
         <div className={`${styles.cardbr} ${styles.cardbrDisappear}`}></div>

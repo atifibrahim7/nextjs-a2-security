@@ -1,90 +1,106 @@
-/* Base styles */
-@keyframes scroll {
-  0% {
-      transform: translateX(0);
+@keyframes slide {
+  from {
+    transform: translateX(0);
   }
-  100% {
-      transform: translateX(-100%);
+  to {
+    transform: translateX(-100%);
   }
 }
 
-.slider {
-  height: 100%;
-  margin: auto;
+.logos {
   overflow: hidden;
+  padding: 20px 0; /* Reduced padding */
+  background: transparent;
+  white-space: nowrap;
   position: relative;
-  width: 100%;
 }
 
-.slidetrack {
-  display: flex;
-  width: calc(100% * 7); /* Base width for 7 slides */
-  animation: scroll 30s linear infinite;
-}
-
-.slide {
+.logos:before,
+.logos:after {
+  position: absolute;
+  top: 0;
+  width: 100px; /* Reduced width */
   height: 100%;
-  flex: 0 0 auto;
-  width: calc(30% / 7); /* Base width for 7 slides */
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  content: "";
+  z-index: 2;
 }
 
-/* Media queries */
-@media (max-width: 1200px) {
-  .slidetrack {
-      width: calc(100% * 5); /* Adjust width for 5 slides */
+.logos:before {
+  left: 0;
+  background: linear-gradient(to left, rgba(255, 255, 255, 0),  #232323);
+}
+
+.logos:after {
+  right: 0;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0), #232323);
+}
+
+.logos:hover .logosslide {
+  animation-play-state: paused;
+}
+
+.logosslide {
+  display: inline-block;
+  animation: 35s slide infinite linear;
+}
+
+.logosslide img {
+  height: 40px; /* Adjusted height */
+  margin: 0 20px; /* Adjusted margin */
+}
+
+@media (max-width: 1000px) {
+  
+   .logosslide img {
+    margin: 0 10px; /* Further reduce margin */
+    height: 20px;
   }
   
-  .slide {
-      width: calc(30% / 5); /* Adjust width for 5 slides */
+  .logos {
+    position: relative;
+    top: -10px;
+    padding: 0 0; /* Reduce padding */
+    
   }
+
+  .logosslide {
+    animation-duration: 55s; /* Slower animation for smaller screens */
+  }
+  .logos:before {
+  left: 0;
+  background: linear-gradient(to left, rgba(255, 255, 255, 0),  #23232300);
 }
 
-@media (max-width: 900px) {
-  .slidetrack {
-      width: calc(100% * 3); /* Adjust width for 3 slides */
-  }
+.logos:after {
+  right: 0;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0), #23232300);
+}
   
-  .slide {
-      width: calc(30% / 3); /* Adjust width for 3 slides */
-  }
 }
-
 @media (max-width: 600px) {
-  .slidetrack {
-      width: calc(100% * 2); /* Adjust width for 2 slides */
+  .logosslide img {
+    height: 10px; /* Further reduce height */
+    margin: 0 10px; /* Further reduce margin */
   }
   
-  .slide {
-      width: calc(30% / 2); /* Adjust width for 2 slides */
+  .logos {
+    position: relative;
+    top: -10px;
+    padding: 0 0; /* Reduce padding */
+    
   }
+
+  .logosslide {
+    animation-duration: 55s; /* Slower animation for smaller screens */
+  }
+  .logos:before {
+  left: 0;
+  background: linear-gradient(to left, rgba(255, 255, 255, 0),  #23232300);
 }
 
-
-
-
-@media (max-width: 1200px) {
-  .slide {
-      transform: scale(0.8); /* Scale down for medium screens */
-  }
+.logos:after {
+  right: 0;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0), #23232300);
+}
 }
 
-@media (max-width: 900px) {
-  .slide {
-      transform: scale(0.6); /* Scale down further for smaller screens */
-  }
-}
-
-@media (max-width: 600px) {
-  .slide {
-      transform: scale(0.5); /* Further scale down for mobile screens */
-  }
-}
-
-@media (max-width: 400px) {
-  .slide {
-      transform: scale(0.4); /* Maximum scaling for very small screens */
-  }
-}
