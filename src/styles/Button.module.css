@@ -33,6 +33,11 @@ background:linear-gradient(34.26deg, #7270FF 9.75%, #AFADFF 93.66%);
   background-color: transparent;
 border: 1px solid #7270FF;
 color: #7270FF;
+
+background-image: url('../../public/images/cardtloval.svg');
+background-size: cover;
+background-repeat: no-repeat;
+background-position: center;
 }
 .arrow{
   padding: 10px 21px;

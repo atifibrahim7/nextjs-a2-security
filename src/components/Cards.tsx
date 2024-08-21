@@ -63,7 +63,7 @@ const Cards = () => {
           <div className={styles.glass}></div>
           <h2>See how we have safeguarded top blockchain projects</h2>
           <p>Explore Our Audit Reports on Github</p>
-          <Button isTransparent>Our Work</Button>
+          <Button isTransparent>Explore Work</Button>
         </div>
         <div className={styles.cardbmt}>
           <h2>200+ Clients</h2>

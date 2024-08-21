@@ -85,9 +85,20 @@ line-height: 130%;
     /* contain every thing inside */
     display: flex;
     flex-direction: column;
+    background-image: url('../../public/images/cardbloval.svg');
+    background-size: 100% 50%;
+    background-position: top;
+    background-repeat: no-repeat;
 
   
 
+}
+.cardbl h2{
+  background: linear-gradient(270deg, #C2C2C2 0%, #FFFFFF 100%);
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  
 }
 .cardbl span{
     color: #AFADFF;
@@ -97,7 +108,10 @@ line-height: 130%;
 .cardbl p{
   margin-top: 50px;
   font-size: small;
-  color: white;
+    background: linear-gradient(270deg, #C2C2C2 0%, #FFFFFF 100%);
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .cardbmt{
   
@@ -120,13 +134,20 @@ line-height: 130%;
 
 .cardbmt h2 {
   width: 50%;
-  color: #7270FF;
+  background: linear-gradient(80.69deg, #AFADFF 17.51%, #7270FF 40.8%);
+
+    background-clip: border-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .cardbmt p {
   margin-top: 15px;
   font-size: small;
-  color: white;
+ background: linear-gradient(270deg, #C2C2C2 0%, #FFFFFF 100%);
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 
@@ -153,14 +174,21 @@ grid-column:2 / 3 ;
   
 }
 .cardbmb .wrapper h2{
-  color: #7270FF;
+ background: linear-gradient(80.69deg, #AFADFF 17.51%, #7270FF 40.8%);
+
+    background-clip: border-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   margin-top: 4rem;
 
 }
 .cardbmb .wrapper p{
-  color:white;
   font-size: small;
   margin-top: 2rem;
+   background: linear-gradient(270deg, #C2C2C2 0%, #FFFFFF 100%);
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .cardbmb .wrapper .image{
   width: 50%;
