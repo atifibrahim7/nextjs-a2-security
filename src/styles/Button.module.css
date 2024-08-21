@@ -52,21 +52,10 @@ background-position: center;
   margin-left: 0.15px;
 
 }
-.arrow:hover {
-  background-color: transparent; /* Change to a blue color on hover */
-  border: 1px solid #8987FF;
-  color: #8987FF;
-}
-.button:hover {
-  background-color: transparent; /* Change to a blue color on hover */
-  border: 1px solid #8987FF;
-  color: #8987FF;
-}
 
-.button:disabled {
-  background-color: #9ca3af; /* Gray background when disabled */
-  cursor: not-allowed;
-}
+
+
+
 
 @media (max-width: 768px) {
   .button {

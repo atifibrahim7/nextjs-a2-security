@@ -77,7 +77,7 @@ a {
   color: inherit;
   text-decoration: underline;
 }
-h1, p, span, em {
+h1, p, span, em , h2 , h3  {
   font-family: 'NeueMachina';
 }
 
