@@ -44,33 +44,30 @@ const Header = () => {
   }, []);
 
   return (
-    <div>
-      <div className={styles.container}>
-        <div className={styles.wrapper}>
-          <div ref={mainRef}>
-            <div className={`${styles.main}`}>
-              <h1>Blockchain Security Audit Services.</h1>
+    <>
+      <div ref={mainRef}>
+        <div className={styles.main}>
+          <div className={styles.left}>
+            <h1>Blockchain Security Audit Services.</h1>
+            <div className={styles.btn}>
+              <Button>Schedule an Audit</Button>
             </div>
-            <div className={styles.description}>
-              <p></p>
-            </div>
-            <Button>Schedule an Audit</Button>
           </div>
-          <div>
-      
+
+          <div className={styles.right}>
             <div ref={imgRef} className={styles.img}>
               <Image
-                src="/images/block.svg"
+                src="/images/block.png"
                 alt="block"
-                width={600}
-                height={600}
+                width={500}
+                height={500}
                 layout="responsive"
               />
             </div>
           </div>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 

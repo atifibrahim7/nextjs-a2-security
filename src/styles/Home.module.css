@@ -1,6 +1,6 @@
 .mainbg{
   background-image: url('../../public/images/ellipse17.svg');
-  background-position: right;
+  background-position: top;
 }
 
 .main {
@@ -10,7 +10,7 @@
   align-items: flex-start;
   width: vw;
   min-height: 100vh;
-  padding: 6rem 2rem 6rem 6rem;
+  padding: 2rem 2rem 6rem 6rem;
  
     
   

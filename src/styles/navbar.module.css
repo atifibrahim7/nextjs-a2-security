@@ -8,7 +8,8 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 20px ;
+      padding: 0.5rem 1rem  0.5rem 1rem;
+
   border: 1px solid  rgba(184, 127, 238, 0.395); /* Border with subtle opacity */
   border-radius: 8px;
    background: rgba(35, 35, 36, 0.8);

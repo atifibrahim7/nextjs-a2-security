@@ -147,7 +147,7 @@ padding-bottom: 30px;
 }
 
 
-@media (max-width: 450px) {
+@media (max-width: 700px) {
   
   .container h1 {
       font-size: 60px; /* Adjust font size for smaller screens */

@@ -381,7 +381,7 @@ background:  linear-gradient(34.26deg, #7270ff93 9.75%, #aeadff43 93.66%);
     grid-row: 7 / 8; /* Adjusted grid area */
     grid-column: 1 / 3;
   }
-
+  
   .cardbr {
     grid-row: 8 / 9; /* Adjusted grid area */
     grid-column: 1 / 3;
