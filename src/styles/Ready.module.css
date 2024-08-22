@@ -21,24 +21,24 @@ font-weight: 400;
 /* Small Desktops (701px - 1120px) */
 @media (min-width: 701px) and (max-width: 1120px) {
     .container h1 {
-      width: 80%; /* Increase width to take more space on smaller screens */
-      font-size: 50px; /* Reduce font size */
-      padding-bottom: 30px; /* Decrease padding */
+      width: 80%;
+      font-size: 50px; 
+      padding-bottom: 30px; 
     }
   }
   
   /* Mobile Devices (max-width: 700px) */
   @media (max-width: 700px) {
     .container h1 {
-      width: 70%; /* Full width for mobile screens */
-      font-size: 36px; /* Further reduce font size */
-      padding-bottom: 20px; /* Further decrease padding */
+      width: 70%; 
+      font-size: 36px;
+      padding-bottom: 20px; 
     line-height: 50px;
 
     }
 
     .container > div {
-      padding: 0 2rem; /* Add horizontal padding */
+      padding: 0 2rem;
     }
   }
   
