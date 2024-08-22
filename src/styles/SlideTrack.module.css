@@ -9,7 +9,7 @@
 
 .logos {
   overflow: hidden;
-  padding: 20px 0; /* Reduced padding */
+  padding: 20px 0; 
   background: transparent;
   white-space: nowrap;
   position: relative;
@@ -19,7 +19,7 @@
 .logos:after {
   position: absolute;
   top: 0;
-  width: 100px; /* Reduced width */
+  width: 100px; 
   height: 100%;
   content: "";
   z-index: 2;
@@ -45,26 +45,26 @@
 }
 
 .logosslide img {
-  height: 40px; /* Adjusted height */
-  margin: 0 20px; /* Adjusted margin */
+  height: 40px; 
+  margin: 0 20px; 
 }
 
 @media (max-width: 1000px) {
   
    .logosslide img {
-    margin: 0 10px; /* Further reduce margin */
+    margin: 0 10px;
     height: 20px;
   }
   
   .logos {
     position: relative;
     top: -10px;
-    padding: 0 0; /* Reduce padding */
+    padding: 0 0;
     
   }
 
   .logosslide {
-    animation-duration: 55s; /* Slower animation for smaller screens */
+    animation-duration: 55s; 
   }
   .logos:before {
   left: 0;
@@ -79,19 +79,19 @@
 }
 @media (max-width: 600px) {
   .logosslide img {
-    height: 10px; /* Further reduce height */
-    margin: 0 10px; /* Further reduce margin */
+    height: 10px; 
+    margin: 0 10px; 
   }
   
   .logos {
     position: relative;
     top: -10px;
-    padding: 0 0; /* Reduce padding */
+    padding: 0 0; 
     
   }
 
   .logosslide {
-    animation-duration: 55s; /* Slower animation for smaller screens */
+    animation-duration: 55s;
   }
   .logos:before {
   left: 0;

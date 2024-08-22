@@ -30,9 +30,15 @@ font-weight: 400;
   /* Mobile Devices (max-width: 700px) */
   @media (max-width: 700px) {
     .container h1 {
-      width: 100%; /* Full width for mobile screens */
+      width: 70%; /* Full width for mobile screens */
       font-size: 36px; /* Further reduce font size */
       padding-bottom: 20px; /* Further decrease padding */
+    line-height: 50px;
+
+    }
+
+    .container > div {
+      padding: 0 2rem; /* Add horizontal padding */
     }
   }
   

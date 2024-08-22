@@ -5,8 +5,10 @@ const Ready = () => {
   return (
     <div>
       <div className={styles.container}>
-        <h1>Ready to Secure Your Project?</h1>
-        <Button>Schedule an Audit</Button>
+        <div>
+          <h1>Ready to Secure Your Project?</h1>
+          <Button>Schedule an Audit</Button>
+        </div>
       </div>
     </div>
   );

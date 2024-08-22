@@ -63,7 +63,7 @@
   position: absolute;
   inset: 0;
   border-radius: 30px;
-  padding: 2px; /* control the border thickness */
+  padding: 2px;
   background: linear-gradient(45deg, red, blue);
   -webkit-mask: 
     linear-gradient(#fff 0 0) content-box, 

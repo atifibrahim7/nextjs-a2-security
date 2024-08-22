@@ -106,12 +106,11 @@ padding-bottom: 30px;
     width: 90%;
     height: 1px;
     background: linear-gradient(34.26deg, #7270ff93 9.75%, #aeadff43 93.66%);
-    position: relative; /* Ensure it can be positioned */
-    transform: translateX(5%); /* Center horizontally */
+    position: relative; 
+    transform: translateX(5%); 
     z-index: 1;
 }
 
-/* Slide-in animations */
 @keyframes slideInLeft {
   from {
     opacity: 0;
@@ -134,15 +133,13 @@ padding-bottom: 30px;
   }
 }
 
-/* Add initial state */
 .slide-left,
 .slide-right {
   opacity: 0;
-  transform: translateX(50%); /* Initial position */
+  transform: translateX(50%); 
   transition: all 0.5s ease;
 }
 
-/* Slide-in classes */
 .slide-in-left {
   animation: slideInLeft 1s forwards;
 }
@@ -155,24 +152,24 @@ padding-bottom: 30px;
 @media (max-width: 700px) {
   
   .container h1 {
-      font-size: 60px; /* Adjust font size for smaller screens */
-      padding-bottom: 5px; /* Adjust padding for better fit */
+      font-size: 60px; 
+      padding-bottom: 5px; 
   }
   
   .container .para {
-      font-size: 24px; /* Reduce font size */
-      width: 90%; /* Adjust width to fit smaller screens */
-      padding-bottom: 30px; /* Adjust padding */
+      font-size: 24px; 
+      width: 90%; 
+      padding-bottom: 30px; 
   }
 
   .container h2 {
-      font-size: 24px; /* Reduce font size */
-      padding: 15px; /* Adjust padding */
+      font-size: 24px; 
+      padding: 15px; 
   }
 
   .container h3 {
-      font-size: 18px; /* Reduce font size */
-      padding: 15px; /* Adjust padding */
+      font-size: 18px; 
+      padding: 15px; 
   }
 
   .grid {
@@ -181,18 +178,27 @@ padding-bottom: 30px;
   }
 
   .grid p {
-      font-size: 16px; /* Reduce font size */
-      padding-left: 2rem; /* Adjust padding */
-      width: 100%; /* Adjust width to fit container */
+      font-size: 16px;
+      padding-left: 2rem;
+      width: 100%; 
   }
 
   .line {
-      width: 100%; /* Full width on smaller screens */
-      transform: none; /* Remove horizontal centering */
+      width: 100%; 
+      transform: none; 
   }
 }
 @media (max-width: 600px) {
   .container {
-      padding-top: 200px; /* Adjust padding for better fit */
+      padding-top: 200px;
+  }
+
+  .container h1  {
+    font-size: 50px;
+
+  }
+  .container .para{
+    font-size: 20px;
+    line-height: 30px;
   }
 }

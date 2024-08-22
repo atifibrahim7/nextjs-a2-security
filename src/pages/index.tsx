@@ -1,14 +1,11 @@
 import Head from "next/head";
-import Image from "next/image";
 import { Inter } from "next/font/google";
 import styles from "@/styles/Home.module.css";
 const inter = Inter({ subsets: ["latin"] });
 import Navbar from "@/components/navbar";
 import Header from "@/components/header";
 import { useState, useEffect, useRef } from "react";
-import LoadingSection from "@/components/LoadingSection";
 import Cards from "@/components/Cards";
-import Button from "@/components/Button";
 import Work from "@/components/Work";
 import Review from "@/components/Review";
 import Footer from "@/components/Footer";

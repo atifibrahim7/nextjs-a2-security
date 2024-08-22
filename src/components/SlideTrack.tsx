@@ -1,6 +1,5 @@
 import styles from "@/styles/SlideTrack.module.css";
 import React from "react";
-import Image from "next/image";
 const Slider = () => {
   return (
     <>

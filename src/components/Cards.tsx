@@ -42,7 +42,7 @@ const Cards = () => {
         <div className={styles.cardtr}>
           <>
             <div>
-              <h1>At the forefront of the</h1>
+              <h1>At the forefront of the </h1>
               <span>Blockchain security</span>
               <p>
                 Secured Over
@@ -62,9 +62,11 @@ const Cards = () => {
         <div className={styles.cardbl}>
           <h2>See how we have safeguarded top blockchain projects</h2>
           <p>Explore Our Audit Reports on Github</p>
-          <Button isTransparent>Explore Work</Button>
+          <div>
+            <Button isTransparent>Explore Work</Button>
+          </div>
         </div>
-        
+
         <div className={styles.cardbmt}>
           <h2>200+ Clients</h2>
           <p>secured worldwide</p>

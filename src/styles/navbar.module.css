@@ -1,15 +1,4 @@
-.roundedcornersborder  
-{
-  
-  border: double 1px transparent;
-  border-radius: 10px;
-  /* background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)),  */
-                    /* linear-gradient(to right, #AAA8FF, #666666); */
-  background-origin: border-box;
-  background-clip: padding-box, border-box;
-  
-}
-/* styles/Navbar.module.css */
+
 .navbar {
   padding: 2rem 0rem 6rem 1rem;
   display: flex;
@@ -21,7 +10,7 @@
   justify-content: space-between;
       padding: 0.5rem 1rem  0.5rem 1rem;
 
-  border: 1px solid  rgba(184, 127, 238, 0.395); /* Border with subtle opacity */
+  border: 1px solid  rgba(184, 127, 238, 0.395);
   border-radius: 8px;
    background: rgba(35, 35, 36, 0.8);
 ;
@@ -34,7 +23,6 @@
   margin-right: 20px;
 }
 .line{
-  /* make a vertical line that doesnt touch the borders */
   border-left: 1px solid rgba(184, 127, 238, 0.395);
   height: 50px;
   width: 10px;
@@ -55,13 +43,13 @@
 }
 
 .links a:hover {
-  color: #afadff; /* Hover effect */
+  color: #afadff; 
 }
 
 @media (max-width: 700px) {
   
   .navbar{
-    padding: 10px ;  /*same in nav */
+    padding: 10px ; 
   }}
 
   @media (max-width: 450px) {
@@ -76,7 +64,7 @@
       align-items: center;
       justify-content: space-between;
       padding: 10px ;
-      border: 1px solid  rgba(184, 127, 238, 0.395); /* Border with subtle opacity */
+      border: 1px solid  rgba(184, 127, 238, 0.395); 
       border-radius: 8px;
        background: rgba(35, 35, 36, 0.8);
     ;
@@ -89,7 +77,6 @@
       margin-right: 10px;
     }
     .line{
-      /* make a vertical line that doesnt touch the borders */
       border-left: 1px solid rgba(184, 127, 238, 0.395);
       height: 30px;
       width: 10px;
