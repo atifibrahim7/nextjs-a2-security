@@ -59,9 +59,8 @@ const Header = () => {
               <Image
                 src="/images/block.png"
                 alt="block"
-                width={500}
-                height={500}
-                layout="responsive"
+                width={600}
+                height={600}
               />
             </div>
           </div>
