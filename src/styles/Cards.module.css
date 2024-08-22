@@ -359,7 +359,16 @@ background:  linear-gradient(34.26deg, #7270ff93 9.75%, #aeadff43 93.66%);
 }
 
 
+@media (min-width: 1200px) and (max-width: 2000px) {
+.cardtr h1 {
+  width: 50%;
+  overflow: visible;
+}
+.cardtr span {
+  width: 40%;
 
+}
+ }
 
 /* Tablet and Smaller Desktop */
  @media (min-width: 450px) and (max-width: 980px) 
@@ -590,11 +599,19 @@ grid-column: 1 / 5;
     gap: 1.5rem;
   }
   .cardtl{
-    background-image: none;
     padding: 0;
     margin: 0;
     text-align: center;
     border: 1px solid #7270FF;
+    
+  }
+  .cardtl p {
+    font-size: 0.8rem;
+    
+  }
+
+  .cardtl span {
+    font-size: 0.8rem;
     
   }
   .cardbl h2 {
