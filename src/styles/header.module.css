@@ -29,11 +29,22 @@
   animation: slideInLeft 0.8s ease-out forwards;
   opacity: 1;
 }
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(50px) scale(1);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0) scale(1.5);
+  }
+}
 
 .slideInRight {
   animation: slideInRight 0.8s ease-out forwards;
   opacity: 1;
 }
+
 
 .main {
   display: flex;
@@ -59,13 +70,11 @@
 }
 
 .img {
-  height: auto;
   width: 100%;
-  max-width: 500px;
 }
 
 .right {
-  max-width: 50%;
+  max-width: 100%;
   display: flex;
   justify-content: flex-end;
   position: absolute;
@@ -75,6 +84,24 @@
 }
 .left h1{
   font-weight: 400;
+}
+
+
+@media (min-width:1500px) and (max-width: 2020px) {
+ @keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(50px) scale(1);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0px) scale(1.2);
+  }
+}
+.right{
+  top:-20%;
+}
+  
 }
 @media (max-width: 1120px) {
   .main {

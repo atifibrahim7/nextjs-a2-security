@@ -48,8 +48,32 @@
   height: 40px; 
   margin: 0 20px; 
 }
+@media (min-width: 1000px) and (max-width: 1140px){
 
-@media (max-width: 1000px) {
+.logos:before {
+  left: 0;
+  background: linear-gradient(to left, rgba(255, 255, 255, 0),  #23232300);
+}
+
+.logos:after {
+  right: 0;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0), #23232300);
+}
+}
+@media (min-width: 1160px) and (max-width: 1300px){
+
+.logos{
+  
+    padding:40px 0;
+}
+
+}
+@media (min-width: 1500px) and (max-width: 2000px) {
+    .logos{
+      padding:40px 0;
+    }
+}
+@media (max-width: 1000px) {  
   
    .logosslide img {
     margin: 0 10px;
