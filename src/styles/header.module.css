@@ -32,11 +32,11 @@
 @keyframes slideInRight {
   from {
     opacity: 0;
-    transform: translateX(50px) scale(1);
+    transform: translateX(50px) scale(0.5);
   }
   to {
     opacity: 1;
-    transform: translateX(0) scale(1.5);
+    transform: translateX(0) scale(1);
   }
 }
 
@@ -60,13 +60,14 @@
   letter-spacing: 0.1rem;
   padding-top: 0;
   padding-bottom: 90px;
+  
 }
 
 
 
 
 .left { 
-  max-width: 50%;
+  max-width: 30%;
 }
 
 .img {
