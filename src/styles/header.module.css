@@ -86,6 +86,13 @@
 .left h1{
   font-weight: 400;
 }
+
+@media (max-width: 1600px) {
+ .left h1 {
+  width: 20%;
+
+ }
+}
 @media (max-width: 1120px) {
   .main {
   padding-bottom: 0.8rem;
