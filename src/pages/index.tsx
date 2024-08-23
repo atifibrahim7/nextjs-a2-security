@@ -1,11 +1,11 @@
 import Cards from "@/components/Cards";
 import Header from "@/components/header";
-import Navbar from "@/components/Navbar";
 import Work from "@/components/Work";
 import styles from "@/styles/Home.module.css";
 import Review from "@/components/Review";
 import Footer from "@/components/Footer";
 import Ready from "@/components/Ready";
+import Navbar from "@/components/navbar";
 import Head from "next/head";
 import { Inter } from "next/font/google";
 const inter = Inter({ subsets: ["latin"] });
