@@ -104,11 +104,13 @@ const Navbar = ({ refs }: NavbarProps) => {
             backgroundColor: "#232323c6",
             color: "white",
             border: "2px solid rgba(170, 168, 255, 0.5)",
+            fontSize: "150px",
+            letterSpacing: "12px",
           },
         }}
         BackdropProps={{
           style: {
-            backgroundColor: "rgba(0, 0, 0, 0.8)", // Darkens the backdrop with reduced brightness
+            backgroundColor: "rgba(0, 0, 0, 0.9)", // Darkens the backdrop with reduced brightness
           },
         }}
       >
