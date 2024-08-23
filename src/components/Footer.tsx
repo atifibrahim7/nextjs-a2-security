@@ -1,4 +1,3 @@
-// components/Footer.tsx
 import React from "react";
 import styles from "@/styles/Footer.module.css";
 type NavbarProps = {

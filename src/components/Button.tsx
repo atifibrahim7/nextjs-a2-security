@@ -1,4 +1,3 @@
-// components/Button.tsx
 import React, { ReactNode } from "react";
 import styles from "@/styles/Button.module.css";
 import { CgArrowTopRight } from "react-icons/cg";

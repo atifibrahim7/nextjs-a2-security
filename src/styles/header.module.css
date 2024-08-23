@@ -49,7 +49,7 @@
   letter-spacing: 0.1rem;
   padding-top: 0;
   padding-bottom: 90px;
-  overflow: visible; /* Allow overflow */
+  overflow: visible; 
   position: relative;
 }
 
@@ -76,10 +76,10 @@
 }
 .img {
   position: relative;
-  width: 150%; /* 1.5x of the container width */
+  width: 150%; 
   height: auto;
-  left: -25%; /* Shift left to center the image */
-  transform: scale(1.5); /* Increase size beyond container */
+  left: -25%; 
+  transform: scale(1.5); 
   position: relative;
   top: -40px;
 }
@@ -116,7 +116,7 @@
 }
 @media (min-width:985px) and (max-width: 1130px) {
  .img {
-    all: unset; /* Resets all properties */
+    all: unset; 
     width: auto;
     height: auto;
     position: relative;
@@ -134,10 +134,10 @@
 }
 .img {
   position: relative;
-  width: 60%; /* 1.5x of the container width */
+  width: 60%; 
   height: auto;
-  left: -25%; /* Shift left to center the image */
-  transform: scale(0.8); /* Increase size beyond container */
+  left: -25%; 
+  transform: scale(0.8); 
   position: relative;
   top: -90px;
 }
@@ -163,11 +163,11 @@
  }
 
  .img {
-    width: 100%; /* Ensure the image fits within its container */
-    height: auto; /* Maintain aspect ratio */
-    max-width: 100%; /* Prevent the image from exceeding container width */
+    width: 100%; 
+    height: auto;
+    max-width: 100%;
     position: relative;
-    transform: none; /* Remove any scaling */
+    transform: none;
     left: 0;
     top: 0;
   }

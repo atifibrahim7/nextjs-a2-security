@@ -57,10 +57,9 @@ export default function Home() {
           <div ref={section2Ref}>
             <Work />
           </div>
-          {/* uncomment to get reviews section  */}
-          {/* <div ref={section3Ref}>
+          <div ref={section3Ref}>
             <Review />
-          </div> */}
+          </div>
           <Ready />
         </main>
       </div>
