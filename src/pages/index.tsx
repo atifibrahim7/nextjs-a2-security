@@ -1,5 +1,5 @@
 import Cards from "@/components/Cards";
-import Header from "@/components/header";
+import Header from "@/components/Head";
 import Work from "@/components/Work";
 import styles from "@/styles/Home.module.css";
 import Review from "@/components/Review";
