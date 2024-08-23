@@ -471,7 +471,7 @@ background:  linear-gradient(34.26deg, #7270ff93 9.75%, #aeadff43 93.66%);
 .cardtl{
   grid-row: 1 / 3;
   grid-column: 1 / 5;
-      border: 1px solid #7270ff8f;
+      border: 1px solid #AFADFF;
 
 }
  .cardtl h1 , .cardtl p , .cardtl span {
@@ -508,6 +508,7 @@ grid-column: 1 / 5;
   padding-top: 20px;
 }
 .cardtr {
+  border: 1px solid #AFADFF;
 grid-row: 10 / 12;
 grid-column: 1 / 5;
 }
