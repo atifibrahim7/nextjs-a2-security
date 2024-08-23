@@ -43,7 +43,7 @@ const Cards = () => {
           <>
             <div>
               <h1>At the forefront of the </h1>
-              <span>Blockchain security</span>
+              <span> Blockchain security</span>
               <p>
                 Secured Over
                 <em> $1 Billion </em>

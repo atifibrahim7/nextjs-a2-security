@@ -45,48 +45,35 @@
 .links a:hover {
   color: #afadff; 
 }
-
+.listItem{
+  font-family: 'NeueMachina';
+  color: #afadff;
+  padding-top: 2rem;
+  text-align: center;
+}
 @media (max-width: 700px) {
   
   .navbar{
     padding: 10px ; 
   }}
 
-  @media (max-width: 450px) {
-  
-    .navbar {
-      padding: 1rem 0rem 0rem 1rem;
-      display: flex;
-    }
-    
-    .navContainer {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding: 10px ;
-      border: 1px solid  rgba(184, 127, 238, 0.395); 
-      border-radius: 8px;
-       background: rgba(35, 35, 36, 0.8);
-    ;
-    }
-    
-    .logo h2 {
-      color: #ffffff;
-      font-weight: 200;
-      font-size: 13.28px;
-      margin-right: 10px;
-    }
-    .line{
-      border-left: 1px solid rgba(184, 127, 238, 0.395);
-      height: 30px;
-      width: 10px;
-      margin-right: 20px;
-      
-    }
-    .links {
-      display: flex;
-      gap: 20px;
-    }
-    
-   
-    }
+
+  /* Desktop Navbar (default) */
+.navbar {
+  display: block; /* Ensure desktop navbar is shown by default */
+}
+
+/* Mobile Navbar */
+.mobileNavbar {
+  display: none; /* Hide mobile navbar by default */
+}
+
+/* Media Query for Mobile Screens */
+@media (max-width: 699px) {
+  .navbar {
+    display: none; /* Hide desktop navbar on mobile */
+  }
+  .mobileNavbar {
+    display: block; /* Show mobile navbar on mobile */
+  }
+}
