@@ -18,7 +18,6 @@ font-weight: 400;
     letter-spacing: -4%;
 }
 
-/* Small Desktops (701px - 1120px) */
 @media (min-width: 701px) and (max-width: 1120px) {
     .container h1 {
       width: 80%;
@@ -27,7 +26,6 @@ font-weight: 400;
     }
   }
   
-  /* Mobile Devices (max-width: 700px) */
   @media (max-width: 700px) {
     .container h1 {
       width: 70%; 
