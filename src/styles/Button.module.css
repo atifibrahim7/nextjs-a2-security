@@ -45,9 +45,10 @@ background-position: center;
 
 @media (max-width: 768px) {
   .button {
-    font-size: 0.8rem;
+    font-size: 0.7rem;
     padding: 10px 15px;
     height: 40px;
+    font-weight: 100;
   }
   
 }

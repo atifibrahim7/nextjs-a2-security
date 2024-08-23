@@ -18,11 +18,12 @@ font-weight: 400;
     letter-spacing: -4%;
 }
 
-@media (min-width: 701px) and (max-width: 1120px) {
+@media (min-width: 701px) and (max-width: 1020px) {
     .container h1 {
       width: 80%;
       font-size: 50px; 
       padding-bottom: 30px; 
+      line-height: 50px;
     }
   }
   
