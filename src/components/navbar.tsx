@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "@/styles/navbar.module.css";
+import styles from "@/styles/Navbar.module.css";
 
 type NavbarProps = {
   refs: {
