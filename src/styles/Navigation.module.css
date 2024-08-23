@@ -40,6 +40,8 @@
   font-size: small;
   transition: color 0.3s ease;
   cursor: pointer;
+  padding-right: 15px;
+  padding-left: 10px;
 }
 
 .links a:hover {
