@@ -60,22 +60,19 @@
   }}
 
 
-  /* Desktop Navbar (default) */
 .navbar {
-  display: block; /* Ensure desktop navbar is shown by default */
+  display: block;
 }
 
-/* Mobile Navbar */
 .mobileNavbar {
-  display: none; /* Hide mobile navbar by default */
+  display: none;
 }
 
-/* Media Query for Mobile Screens */
 @media (max-width: 699px) {
   .navbar {
-    display: none; /* Hide desktop navbar on mobile */
+    display: none;
   }
   .mobileNavbar {
-    display: block; /* Show mobile navbar on mobile */
+    display: block;
   }
 }

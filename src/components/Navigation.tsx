@@ -48,7 +48,6 @@ const Navbar = ({ refs }: NavbarProps) => {
 
   return (
     <div>
-      {/* Desktop Navbar */}
       <nav className={styles.navbar}>
         <div className={styles.roundedcornersborder}>
           <div className={styles.navContainer}>
@@ -92,7 +91,6 @@ const Navbar = ({ refs }: NavbarProps) => {
           </Toolbar>
         </AppBar>
       </HideOnScroll>
-      {/* Drawer for Mobile */}
       <Drawer
         anchor="left"
         open={isDrawerOpen}
@@ -110,7 +108,7 @@ const Navbar = ({ refs }: NavbarProps) => {
         }}
         BackdropProps={{
           style: {
-            backgroundColor: "rgba(0, 0, 0, 0.9)", // Darkens the backdrop with reduced brightness
+            backgroundColor: "rgba(0, 0, 0, 0.9)",
           },
         }}
       >
