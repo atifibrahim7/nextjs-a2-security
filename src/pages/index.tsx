@@ -38,7 +38,7 @@ export default function Home() {
         <title>A2 Security</title>
         <meta name="description" content="Landing page" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/a2.svg" />
       </Head>
       <div className={styles.mainbg}>
         <main className={`${styles.main} ${inter.className}`}>
