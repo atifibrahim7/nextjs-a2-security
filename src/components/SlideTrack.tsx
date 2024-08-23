@@ -1,30 +1,30 @@
 import styles from "@/styles/SlideTrack.module.css";
 import React from "react";
-const Slider = () => {
+
+const logos = [
+  "./logos/3m.svg",
+  "./logos/barstool-store.svg",
+  "./logos/budweiser.svg",
+  "./logos/buzzfeed.svg",
+  "./logos/forbes.svg",
+  "./logos/macys.svg",
+  "./logos/menshealth.svg",
+  "./logos/mrbeast.svg",
+];
+
+const Slider: React.FC = () => {
   return (
     <>
       <div className={styles.logos}>
-        <div className={styles.logosslide}>
-          <img src="./logos/3m.svg" />
-          <img src="./logos/barstool-store.svg" />
-          <img src="./logos/budweiser.svg" />
-          <img src="./logos/buzzfeed.svg" />
-          <img src="./logos/forbes.svg" />
-          <img src="./logos/macys.svg" />
-          <img src="./logos/menshealth.svg" />
-          <img src="./logos/mrbeast.svg" />
-        </div>
-
-        <div className={styles.logosslide}>
-          <img src="./logos/3m.svg" />
-          <img src="./logos/barstool-store.svg" />
-          <img src="./logos/budweiser.svg" />
-          <img src="./logos/buzzfeed.svg" />
-          <img src="./logos/forbes.svg" />
-          <img src="./logos/macys.svg" />
-          <img src="./logos/menshealth.svg" />
-          <img src="./logos/mrbeast.svg" />
-        </div>
+        {Array(2)
+          .fill(0)
+          .map((_, index) => (
+            <div key={index} className={styles.logosslide}>
+              {logos.map((logo, idx) => (
+                <img key={idx} src={logo} alt={`logo-${idx}`} />
+              ))}
+            </div>
+          ))}
       </div>
     </>
   );
