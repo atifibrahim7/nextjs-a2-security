@@ -5,7 +5,7 @@ import styles from "@/styles/Home.module.css";
 import Review from "@/components/Review";
 import Footer from "@/components/Footer";
 import Ready from "@/components/Ready";
-import Navbar from "@/components/navbar";
+import Navbar from "@/components/Navbar";
 import Head from "next/head";
 import { Inter } from "next/font/google";
 const inter = Inter({ subsets: ["latin"] });
