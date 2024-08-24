@@ -53,6 +53,7 @@ background:  rgba(112, 112, 112, 1);
 
   .footerContainer {
     padding: 30px;
+
     max-width: 1000px; 
   }
 
@@ -75,6 +76,8 @@ background:  rgba(112, 112, 112, 1);
   .footerContainer {
     padding: 10px;
     max-width: 100%;
+        padding-left: 0;
+    padding-right: 0;
   }
 
   .middleSection .links,

@@ -185,6 +185,10 @@
 .left h1 {
   font-size: 4.5rem;
 }
+.left {
+  padding-top: 7rem;
+  padding-bottom: 7rem;
+}
 }
 @media (max-width: 540px) {
 .left h1 {
