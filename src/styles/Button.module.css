@@ -43,7 +43,7 @@ background-position: center;
 }
 
 
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
   .button {
     font-size: 0.7rem;
     padding: 10px 15px;
@@ -51,5 +51,5 @@ background-position: center;
     font-weight: 100;
   }
   
-}
+} */
 

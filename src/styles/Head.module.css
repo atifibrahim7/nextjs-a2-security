@@ -152,49 +152,93 @@
   .main {
 
     flex-direction: column;
-    text-align: center;
     font-size: 1.2rem;
     flex-direction: column-reverse;
-  padding-top: 100px;
-
-  background-image: none;
+    padding-top: 100px;
+    justify-content: flex-start;
 
 
   }
-
- .right{
+  .left{
+    all: unset;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+  .left h1 {
+    font-size: 5.5rem;
+    padding-bottom: 2rem;
+  }
+ .right , .img{
     display: none;
  }
 
- .img {
-    width: 100%; 
-    height: auto;
-    max-width: 100%;
-    position: relative;
-    transform: none;
-    left: 0;
-    top: 0;
-  }
+
   .btn{
     width: 100%;
     display: flex;
-    justify-content: center;
-    align-items: center;
 
   }
-
-
-
 }
 
-@media (max-width: 450px) {
+
+@media (max-width: 640px) {
+.left h1 {
+  font-size: 4.5rem;
+}
+}
+@media (max-width: 540px) {
+.left h1 {
+  font-size: 3.5rem;
+}
+}
+@media (max-width: 430px) {
   .main {
     font-size: 0.8rem;
   padding-top: 70px;
     
   }
+  .left h1 {
+    font-size: 3rem;
+  }
 
   
 }
+@media (max-width: 380px) {
+ 
+  .left h1 {
+    font-size: 2.8rem;
+  }
+
+  
+}
+@media (max-width: 350px) {
+
+  .left h1 {
+    font-size: 2.4rem;
+  }
+
+  
+}
+@media (max-width: 300px) {
+  
+  .left h1 {
+    font-size: 2rem;
+  }
+
+  
+}
+
+
+@media (max-width: 265px) {
+  
+  .left h1 {
+    font-size: 1.5rem;
+  }
+
+  
+}
+
+
+
 
 
